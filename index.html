@@ -1,89 +1,120 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kubekite - Technology Solutions & App Development</title>
+  <title>Kubekite - Future of Technology Solutions</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <script src="script.js" defer></script>
 </head>
 <body>
+  <div class="cursor"></div>
   <header class="navbar">
     <div class="logo">Kubekite</div>
     <nav>
       <a href="#home">Home</a>
       <a href="#services">Services</a>
       <a href="#portfolio">Portfolio</a>
-      <a href="#about">About Us</a>
+      <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section id="hero">
     <div class="hero-content">
-      <h1>Innovating the Future with Custom App Development</h1>
-      <p>We build mobile apps for App Store & Play Store and deliver top-notch tech solutions tailored to your needs.</p>
-      <a href="#services" class="cta-button">Explore Our Services</a>
+      <div class="gradient-sphere"></div>
+      <h1 class="glitch" data-text="Innovating Tomorrow">Innovating Tomorrow</h1>
+      <p class="typewriter">We craft cutting-edge digital solutions that transform businesses.</p>
+      <div class="cta-container">
+        <a href="#services" class="cta-button">Explore Services</a>
+        <a href="#contact" class="cta-button secondary">Get Started</a>
+      </div>
     </div>
   </section>
 
   <section id="services" class="section">
-    <h2>Our Services</h2>
+    <h2 class="section-title">Our Expertise</h2>
     <div class="services-container">
       <div class="service-card">
-        <h3>Mobile App Development</h3>
-        <p>Design, develop, and launch apps for iOS & Android platforms.</p>
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Mobile Development</h3>
+        <p>Native iOS & Android apps with cutting-edge technology</p>
       </div>
       <div class="service-card">
-        <h3>Technology Consulting</h3>
-        <p>Strategic guidance to help you embrace the right technologies.</p>
+        <i class="fas fa-brain"></i>
+        <h3>AI Solutions</h3>
+        <p>Intelligent systems powered by machine learning</p>
       </div>
       <div class="service-card">
+        <i class="fas fa-code"></i>
         <h3>Web Development</h3>
-        <p>We develop modern websites with a focus on performance optimization and user experience enhancement.</p>
+        <p>Modern web applications with stunning UI/UX</p>
       </div>
     </div>
   </section>
 
   <section id="portfolio" class="section">
-    <h2>Our Work</h2>
+    <h2 class="section-title">Featured Work</h2>
     <div class="portfolio-container">
       <div class="portfolio-item">
-        <img src="app1.jpg" alt="App Project 1" loading="lazy">
-        <p>Project 1 - Health Tracker App</p>
+        <div class="portfolio-overlay"></div>
+        <img src="app1.jpg" alt="AI-Powered Health App" loading="lazy">
+        <div class="portfolio-content">
+          <h3>AI-Powered Health App</h3>
+          <p>Revolutionary health tracking with ML insights</p>
+        </div>
       </div>
       <div class="portfolio-item">
-        <img src="app2.jpg" alt="App Project 2" loading="lazy">
-        <p>Project 2 - Social Networking Platform</p>
+        <div class="portfolio-overlay"></div>
+        <img src="app2.jpg" alt="Social Platform" loading="lazy">
+        <div class="portfolio-content">
+          <h3>Next-Gen Social Platform</h3>
+          <p>Connecting millions through innovation</p>
+        </div>
       </div>
       <div class="portfolio-item">
-        <img src="app3.jpg" alt="App Project 3" loading="lazy">
-        <p>Project 3 - E-commerce Mobile App</p>
+        <div class="portfolio-overlay"></div>
+        <img src="app3.jpg" alt="E-commerce Solution" loading="lazy">
+        <div class="portfolio-content">
+          <h3>Smart E-commerce</h3>
+          <p>AI-driven shopping experience</p>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="about" class="section">
-    <h2>About Kubekite</h2>
-    <p>Kubekite is a technology company focused on delivering exceptional software solutions. Our team is passionate about building innovative apps and providing consulting services to help businesses succeed in the digital era.</p>
+    <h2 class="section-title">Our Vision</h2>
+    <div class="about-content">
+      <p>Kubekite leads the digital revolution with innovative solutions that shape the future. Our team of experts combines creativity with cutting-edge technology to deliver exceptional results.</p>
+    </div>
   </section>
 
   <section id="contact" class="section">
-    <h2>Contact Us</h2>
-    <!-- Embed Google Form -->
-    <iframe 
-      src="https://docs.google.com/forms/d/e/1FAIpQLSfk7C1w_3CgMhnOai2XXtlCQxVvNY1yoG_O5oz7WT14YGK70g/viewform?embedded=true" 
-      width="100%" 
-      height="800" 
-      frameborder="0" 
-      marginheight="0" 
-      marginwidth="0">
-      Loading…
-    </iframe>
+    <h2 class="section-title">Start Your Journey</h2>
+    <div class="contact-container">
+      <iframe 
+        src="https://docs.google.com/forms/d/e/1FAIpQLSfk7C1w_3CgMhnOai2XXtlCQxVvNY1yoG_O5oz7WT14YGK70g/viewform?embedded=true" 
+        width="100%" 
+        height="800" 
+        frameborder="0">
+        Loading…
+      </iframe>
+    </div>
   </section>
 
   <footer class="footer">
-    <p>© 2024 Kubekite. All rights reserved.</p>
+    <div class="footer-content">
+      <div class="footer-logo">Kubekite</div>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <p>© 2024 Kubekite. Shaping the Future of Technology.</p>
   </footer>
 </body>
 </html>
