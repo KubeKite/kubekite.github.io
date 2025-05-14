@@ -1,18 +1,18 @@
-
 :root {
   --primary-color: #00f5ff;
   --secondary-color: #7000ff;
   --accent-color: #ff00d4;
   --dark-bg: #050510;
-  --glass-bg: rgba(255, 255, 255, 0.05);
-  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --neon-glow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-color), 0 0 30px var(--accent-color);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'SF Pro Display', system-ui, sans-serif;
+  font-family: 'Orbitron', system-ui, sans-serif;
 }
 
 html {
@@ -20,25 +20,13 @@ html {
 }
 
 body {
-  background-color: var(--dark-bg);
+  background: linear-gradient(135deg, #050510, #1a1a2e);
   color: #fff;
   line-height: 1.6;
   overflow-x: hidden;
 }
 
-.cursor {
-  width: 20px;
-  height: 20px;
-  border: 2px solid var(--primary-color);
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none;
-  z-index: 9999;
-  transition: transform 0.2s;
-  mix-blend-mode: difference;
-}
-
-.navbar {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,14 +38,6 @@ body {
   top: 0;
   z-index: 1000;
   border-bottom: 1px solid var(--glass-border);
-}
-
-.logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 nav a {
@@ -88,86 +68,194 @@ nav a:hover::after {
   width: 100%;
 }
 
-#hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  padding: 100px 5%;
-  overflow: hidden;
-}
-
-.gradient-sphere {
-  position: absolute;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, var(--primary-color) 0%, transparent 70%);
-  filter: blur(100px);
-  opacity: 0.2;
-  animation: float 6s infinite ease-in-out;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0) scale(1); }
-  50% { transform: translateY(-20px) scale(1.05); }
-}
-
-.hero-content {
-  text-align: center;
-  z-index: 1;
-}
-
-.glitch {
-  font-size: 4rem;
-  font-weight: bold;
-  position: relative;
-  background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 20px;
-}
-
-.typewriter {
-  font-size: 1.2rem;
-  margin: 20px 0;
-  opacity: 0.9;
-}
-
-.cta-container {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 40px;
-}
-
-.cta-button {
-  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+/* Add a class to the parent element */
+.nav-links a {
   color: #fff;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 30px;
-  font-weight: bold;
   text-decoration: none;
-  transition: transform 0.3s, box-shadow 0.3s;
+  margin-left: 30px;
   position: relative;
-  overflow: hidden;
+  opacity: 0.8;
+  transition: opacity 0.3s;
 }
 
-.cta-button::before {
+.nav-links a::after {
   content: '';
   position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-  transition: 0.5s;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: var(--primary-color);
+  transition: width 0.3s;
+}
+.nav-links a[href="#services"] {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30px;
+  position: relative;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+/* Add a class to the parent element */
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30px;
+  position: relative;
+  opacity: 0.8;
+  transition: opacity 0.3s;
 }
 
-.cta-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 20px rgba(0, 245, 255, 0.4);
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: var(--primary-color);
+  transition: width 0.3s;
+}
+
+.nav-links a[href="#portfolio"] {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30px;
+  position: relative;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+/* Add any additional styles for the link here */
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30px;
+  position: relative;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.about-link {
+  /* Add any additional styles for the link here */
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30px;
+  position: relative;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+/* Remove or move this line to an appropriate HTML file */
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30px;
+  position: relative;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+button {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  box-shadow: var(--neon-glow);
+}
+
+button:hover {
+  background: var(--primary-color);
+  color: #050510;
+  box-shadow: 0 0 15px var(--primary-color), 0 0 30px var(--accent-color);
+  transform: scale(1.1);
+}
+
+:root {
+  --primary-color: #00f5ff;
+  --secondary-color: #7000ff;
+  --accent-color: #ff00d4;
+  --dark-bg: #050510;
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --neon-glow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-color), 0 0 30px var(--accent-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(135deg, #050510, #1a1a2e);
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+button {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  box-shadow: var(--neon-glow);
+}
+
+button:hover {
+  background: var(--primary-color);
+  color: #050510;
+  box-shadow: 0 0 15px var(--primary-color), 0 0 30px var(--accent-color);
+  transform: scale(1.1);
+}
+
+nav a {
+  color: var(--primary-color);
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+nav a:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--glass-bg);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  box-shadow: var(--neon-glow);
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+section {
+  padding: 50px;
+  margin: 20px auto;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 10px;
+  box-shadow: var(--neon-glow);
 }
 
 .cta-button:hover::before {
