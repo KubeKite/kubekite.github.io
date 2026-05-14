@@ -295,7 +295,8 @@ h3 {
 .node-label,
 .signal-grid span,
 .trust-grid span,
-.capability-list span {
+.capability-list span,
+.capability-card span {
   display: block;
   color: var(--muted);
   font-size: 0.77rem;
@@ -420,6 +421,39 @@ h3 {
 
 .platform-section {
   background: var(--surface-soft);
+}
+
+.capabilities-section {
+  background: #ffffff;
+}
+
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.capability-card {
+  min-height: 250px;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(238, 244, 248, 0.68), rgba(255, 255, 255, 0) 48%),
+    #ffffff;
+}
+
+.capability-card span {
+  color: var(--brand);
+}
+
+.capability-card h3 {
+  margin-top: 28px;
+}
+
+.capability-card p {
+  margin-bottom: 0;
+  color: var(--muted);
 }
 
 .platform-grid {
@@ -596,6 +630,7 @@ h3 {
   }
 
   .offerings-grid,
+  .capabilities-grid,
   .trust-grid,
   .why-metrics {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -637,6 +672,7 @@ h3 {
   }
 
   .offerings-grid,
+  .capabilities-grid,
   .trust-grid,
   .why-metrics,
   .signal-grid {

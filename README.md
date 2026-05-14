@@ -1,11 +1,12 @@
 # Kubekite - AI Infrastructure & Platform Engineering
 
-Static website for Kubekite, positioned around AI infrastructure, Kubernetes, GitOps, cloud platforms, observability, security, and cost optimization.
+Static website for Kubekite, positioned around AI infrastructure, Kubernetes, GitOps, GPU orchestration, inference serving, operational runbooks, AI SRE workflows, observability, security, and cost optimization.
 
 ## Features
 
 - Single-page consulting homepage
 - Productized service offering sections
+- AI platform capabilities section
 - Architecture-style platform visual
 - Smooth anchor navigation
 - Lightweight reveal-on-scroll interaction
@@ -24,6 +25,7 @@ Static website for Kubekite, positioned around AI infrastructure, Kubernetes, Gi
 - Hero and assessment CTA
 - Platform trust strip
 - Productized offerings
+- AI platform capabilities
 - Operating model
 - Founder-led credibility
 - Assessment request form
