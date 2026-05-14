@@ -3,120 +3,276 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kubekite - Future of Technology Solutions</title>
-  <meta name="description" content="Kubekite offers cutting-edge technology solutions with a sleek cyberpunk-inspired design.">
-  <meta name="keywords" content="technology, solutions, cyberpunk, responsive design, modern UI">
+  <title>Kubekite - AI Infrastructure & Platform Engineering</title>
+  <meta name="description" content="Kubekite helps teams build secure, production-ready AI infrastructure with Kubernetes, GitOps, cloud platforms, observability, and cost control.">
+  <meta name="keywords" content="AI infrastructure, platform engineering, Kubernetes, EKS, GitOps, Argo CD, DevOps, cloud cost optimization">
   <link rel="preload" href="assets/css/styles.css" as="style">
   <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <script src="assets/js/script.js" defer></script>
 </head>
 <body>
-  <div class="cursor"></div>
-  <header class="navbar">
-    <div class="logo">Kubekite</div>
-    <nav role="navigation">
-      <a href="#home" aria-label="Home">Home</a>
-      <a href="#services" aria-label="Services">Services</a>
-      <a href="#portfolio" aria-label="Portfolio">Portfolio</a>
-      <a href="#about" aria-label="About">About</a>
-      <a href="#contact" aria-label="Contact">Contact</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Kubekite home">
+      <span class="brand-mark">K</span>
+      <span>Kubekite</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#offerings">Offerings</a>
+      <a href="#platform">Platform</a>
+      <a href="#why">Why Kubekite</a>
+      <a href="#assessment">Assessment</a>
     </nav>
+    <a class="nav-cta" href="#assessment">Book Assessment</a>
   </header>
 
-  <section id="hero">
-    <div class="hero-content">
-      <div class="gradient-sphere"></div>
-      <h1 class="glitch" data-text="Innovating Tomorrow">Innovating Tomorrow</h1>
-      <p class="typewriter">We craft cutting-edge digital solutions that transform businesses.</p>
-      <div class="cta-container">
-        <a href="#services" class="cta-button">Explore Services</a>
-        <a href="#contact" class="cta-button secondary">Get Started</a>
-      </div>
-    </div>
-  </section>
+  <main id="home">
+    <section class="hero section-band">
+      <div class="section-inner hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">AI Infrastructure & Platform Engineering</p>
+          <h1>Production-ready AI systems need more than a model.</h1>
+          <p class="hero-lede">
+            Kubekite helps engineering teams design, deploy, and operate secure AI platforms across Kubernetes,
+            GitOps, cloud infrastructure, observability, and cost controls.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#assessment">Book an AI Platform Assessment</a>
+            <a class="button secondary" href="#offerings">View Offerings</a>
+          </div>
+          <div class="hero-proof" aria-label="Core capabilities">
+            <span>Kubernetes</span>
+            <span>GitOps</span>
+            <span>Cloud</span>
+            <span>Security</span>
+          </div>
+        </div>
 
-  <section id="services" class="section">
-    <h2 class="section-title">Our Expertise</h2>
-    <div class="services-container">
-      <div class="service-card">
-        <i class="fas fa-mobile-alt"></i>
-        <h3>Mobile Development</h3>
-        <p>Native iOS & Android apps with cutting-edge technology</p>
-      </div>
-      <div class="service-card">
-        <i class="fas fa-brain"></i>
-        <h3>AI Solutions</h3>
-        <p>Intelligent systems powered by machine learning</p>
-      </div>
-      <div class="service-card">
-        <i class="fas fa-code"></i>
-        <h3>Web Development</h3>
-        <p>Modern web applications with stunning UI/UX</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="portfolio" class="section">
-    <h2 class="section-title">Featured Work</h2>
-    <div class="portfolio-container">
-      <div class="portfolio-item">
-        <div class="portfolio-overlay"></div>
-        <img src="app1.jpg" alt="AI-Powered Health App" loading="lazy">
-        <div class="portfolio-content">
-          <h3>AI-Powered Health App</h3>
-          <p>Revolutionary health tracking with ML insights</p>
+        <div class="architecture-card reveal" aria-label="AI platform architecture overview">
+          <div class="architecture-header">
+            <span class="status-dot"></span>
+            <span>Reference AI Platform</span>
+          </div>
+          <div class="architecture-flow">
+            <div class="arch-node">
+              <span class="node-label">Source</span>
+              <strong>Git + CI</strong>
+            </div>
+            <div class="arch-node">
+              <span class="node-label">Delivery</span>
+              <strong>Argo CD</strong>
+            </div>
+            <div class="arch-node">
+              <span class="node-label">Runtime</span>
+              <strong>EKS / K8s</strong>
+            </div>
+            <div class="arch-node accent">
+              <span class="node-label">AI Workloads</span>
+              <strong>RAG + Inference</strong>
+            </div>
+          </div>
+          <div class="signal-grid">
+            <div>
+              <span>Secrets</span>
+              <strong>Vault / IAM</strong>
+            </div>
+            <div>
+              <span>Telemetry</span>
+              <strong>Metrics + Logs</strong>
+            </div>
+            <div>
+              <span>Governance</span>
+              <strong>Policy Ready</strong>
+            </div>
+            <div>
+              <span>Spend</span>
+              <strong>Cost Visibility</strong>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="portfolio-item">
-        <div class="portfolio-overlay"></div>
-        <img src="app2.jpg" alt="Social Platform" loading="lazy">
-        <div class="portfolio-content">
-          <h3>Next-Gen Social Platform</h3>
-          <p>Connecting millions through innovation</p>
+    </section>
+
+    <section class="trust-strip" aria-label="Platform focus areas">
+      <div class="section-inner trust-grid">
+        <div>
+          <span>01</span>
+          <strong>Kubernetes foundations</strong>
+        </div>
+        <div>
+          <span>02</span>
+          <strong>GitOps delivery</strong>
+        </div>
+        <div>
+          <span>03</span>
+          <strong>Secure cloud architecture</strong>
+        </div>
+        <div>
+          <span>04</span>
+          <strong>Observability and cost control</strong>
         </div>
       </div>
-      <div class="portfolio-item">
-        <div class="portfolio-overlay"></div>
-        <img src="app3.jpg" alt="E-commerce Solution" loading="lazy">
-        <div class="portfolio-content">
-          <h3>Smart E-commerce</h3>
-          <p>AI-driven shopping experience</p>
+    </section>
+
+    <section id="offerings" class="section-band">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Productized services</p>
+          <h2>Focused engagements for AI-ready platforms.</h2>
+          <p>
+            Start with a defined outcome, then expand into implementation and enablement as your platform matures.
+          </p>
+        </div>
+
+        <div class="offerings-grid">
+          <article class="offering-card reveal">
+            <span class="card-kicker">Starter platform</span>
+            <h3>AI Platform Starter</h3>
+            <p>
+              Build the foundation for AI workloads with Kubernetes, GitOps, CI/CD, secrets, observability,
+              and a clean deployment path for model or RAG services.
+            </p>
+            <ul>
+              <li>EKS or Kubernetes platform baseline</li>
+              <li>Argo CD delivery workflow</li>
+              <li>Secrets, IAM, and runtime guardrails</li>
+            </ul>
+          </article>
+
+          <article class="offering-card reveal">
+            <span class="card-kicker">Delivery modernization</span>
+            <h3>GitOps Modernization</h3>
+            <p>
+              Make deployments repeatable, auditable, and safer across environments with practical GitOps patterns
+              that fit real engineering teams.
+            </p>
+            <ul>
+              <li>Argo CD app and environment structure</li>
+              <li>Promotion and rollback practices</li>
+              <li>Policy-ready delivery conventions</li>
+            </ul>
+          </article>
+
+          <article class="offering-card reveal">
+            <span class="card-kicker">Efficiency review</span>
+            <h3>Cloud & AI Cost Optimization</h3>
+            <p>
+              Identify waste, improve workload placement, and prepare for GPU or AI demand without letting cloud
+              spend become the hidden platform risk.
+            </p>
+            <ul>
+              <li>Kubernetes and cloud spend review</li>
+              <li>Workload right-sizing recommendations</li>
+              <li>AI and GPU readiness guidance</li>
+            </ul>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="about" class="section">
-    <h2 class="section-title">Our Vision</h2>
-    <div class="about-content">
-      <p>Kubekite leads the digital revolution with innovative solutions that shape the future. Our team of experts combines creativity with cutting-edge technology to deliver exceptional results.</p>
-    </div>
-  </section>
+    <section id="platform" class="section-band platform-section">
+      <div class="section-inner platform-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Operating model</p>
+          <h2>From experiments to production operations.</h2>
+          <p>
+            AI initiatives move quickly, but production systems still need deployment discipline, secure access,
+            incident visibility, and cost accountability.
+          </p>
+        </div>
+        <div class="capability-list reveal">
+          <div>
+            <span>Deploy</span>
+            <p>Git-based releases, environment promotion, CI/CD integration, and deployment rollback paths.</p>
+          </div>
+          <div>
+            <span>Secure</span>
+            <p>Cloud IAM, secrets management, network boundaries, and platform guardrails for sensitive workloads.</p>
+          </div>
+          <div>
+            <span>Observe</span>
+            <p>Metrics, logs, traces, SLO signals, and LLM-aware telemetry for production troubleshooting.</p>
+          </div>
+          <div>
+            <span>Optimize</span>
+            <p>Cluster efficiency, workload sizing, storage review, GPU readiness, and cloud cost visibility.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section id="contact" class="section">
-    <h2 class="section-title">Start Your Journey</h2>
-    <div class="contact-container">
-      <iframe 
-        src="https://docs.google.com/forms/d/e/1FAIpQLSfk7C1w_3CgMhnOai2XXtlCQxVvNY1yoG_O5oz7WT14YGK70g/viewform?embedded=true" 
-        width="100%" 
-        height="800" 
-        frameborder="0">
-        Loading…
-      </iframe>
-    </div>
-  </section>
+    <section id="why" class="section-band">
+      <div class="section-inner why-panel reveal">
+        <div>
+          <p class="eyebrow">Why Kubekite</p>
+          <h2>Founder-led platform engineering for teams that need production judgment.</h2>
+        </div>
+        <p>
+          Kubekite is built around senior DevOps and platform engineering experience: Kubernetes operations,
+          GitOps delivery, cloud architecture, security integration, and the practical tradeoffs that show up
+          when systems move from demos to real users.
+        </p>
+        <div class="why-metrics" aria-label="Kubekite strengths">
+          <div>
+            <strong>Reliability</strong>
+            <span>Architecture that survives real operational pressure.</span>
+          </div>
+          <div>
+            <strong>Security</strong>
+            <span>Secrets, identity, and access patterns designed in early.</span>
+          </div>
+          <div>
+            <strong>Enablement</strong>
+            <span>Documentation and delivery patterns your team can own.</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-logo">Kubekite</div>
-      <div class="social-links">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
+    <section id="assessment" class="section-band assessment-section">
+      <div class="section-inner">
+        <div class="assessment-intro reveal">
+          <p class="eyebrow">Book an assessment</p>
+          <h2>Find the fastest safe path to an AI-ready platform.</h2>
+          <p>
+            Share where your team is today. Kubekite will review your goals and help identify the platform,
+            security, delivery, and cost decisions that matter first.
+          </p>
+        </div>
+        <div class="form-shell reveal">
+          <iframe
+            title="Kubekite AI platform assessment request form"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfk7C1w_3CgMhnOai2XXtlCQxVvNY1yoG_O5oz7WT14YGK70g/viewform?embedded=true"
+            width="100%"
+            height="800"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0">
+            Loading...
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-inner footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#home" aria-label="Kubekite home">
+          <span class="brand-mark">K</span>
+          <span>Kubekite</span>
+        </a>
+        <p>AI infrastructure and platform engineering for production-ready systems.</p>
+      </div>
+      <div class="footer-links" aria-label="Footer links">
+        <a href="#offerings">Offerings</a>
+        <a href="#why">Why Kubekite</a>
+        <a href="#assessment">Book Assessment</a>
       </div>
     </div>
-    <p>© 2024 Kubekite. Shaping the Future of Technology.</p>
+    <div class="section-inner footer-bottom">
+      <span>&copy; 2026 Kubekite. All rights reserved.</span>
+      <span>kubekite.com</span>
+    </div>
   </footer>
 </body>
 </html>
