@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kubekite - AI Infrastructure & Platform Engineering</title>
-  <meta name="description" content="Kubekite helps teams build secure, production-ready AI infrastructure with Kubernetes, GitOps, cloud platforms, observability, and cost control.">
-  <meta name="keywords" content="AI infrastructure, platform engineering, Kubernetes, EKS, GitOps, Argo CD, DevOps, cloud cost optimization">
+  <meta name="description" content="Kubekite helps teams build secure, production-ready AI infrastructure with Kubernetes, GitOps, GPU orchestration, inference serving, runbooks, observability, and cost control.">
+  <meta name="keywords" content="AI infrastructure, platform engineering, Kubernetes, EKS, GitOps, Argo CD, DevOps, GPU orchestration, AI SRE, inference serving, cloud cost optimization">
   <link rel="preload" href="assets/css/styles.css" as="style">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="assets/js/script.js" defer></script>
@@ -18,6 +18,7 @@
     </a>
     <nav class="site-nav" aria-label="Primary navigation">
       <a href="#offerings">Offerings</a>
+      <a href="#capabilities">Capabilities</a>
       <a href="#platform">Platform</a>
       <a href="#why">Why Kubekite</a>
       <a href="#assessment">Assessment</a>
@@ -33,7 +34,7 @@
           <h1>Production-ready AI systems need more than a model.</h1>
           <p class="hero-lede">
             Kubekite helps engineering teams design, deploy, and operate secure AI platforms across Kubernetes,
-            GitOps, cloud infrastructure, observability, and cost controls.
+            GitOps, GPU orchestration, inference serving, operational runbooks, observability, and cost controls.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#assessment">Book an AI Platform Assessment</a>
@@ -42,8 +43,9 @@
           <div class="hero-proof" aria-label="Core capabilities">
             <span>Kubernetes</span>
             <span>GitOps</span>
-            <span>Cloud</span>
-            <span>Security</span>
+            <span>AI SRE</span>
+            <span>Inference</span>
+            <span>GPU readiness</span>
           </div>
         </div>
 
@@ -84,8 +86,8 @@
               <strong>Policy Ready</strong>
             </div>
             <div>
-              <span>Spend</span>
-              <strong>Cost Visibility</strong>
+              <span>Data</span>
+              <strong>S3 / Vector</strong>
             </div>
           </div>
         </div>
@@ -104,11 +106,11 @@
         </div>
         <div>
           <span>03</span>
-          <strong>Secure cloud architecture</strong>
+          <strong>AI data and inference paths</strong>
         </div>
         <div>
           <span>04</span>
-          <strong>Observability and cost control</strong>
+          <strong>AI SRE and cost control</strong>
         </div>
       </div>
     </section>
@@ -129,12 +131,12 @@
             <h3>AI Platform Starter</h3>
             <p>
               Build the foundation for AI workloads with Kubernetes, GitOps, CI/CD, secrets, observability,
-              and a clean deployment path for model or RAG services.
+              AI data storage, and a clean deployment path for model or RAG services.
             </p>
             <ul>
               <li>EKS or Kubernetes platform baseline</li>
               <li>Argo CD delivery workflow</li>
-              <li>Secrets, IAM, and runtime guardrails</li>
+              <li>Secrets, IAM, storage, and runtime guardrails</li>
             </ul>
           </article>
 
@@ -143,11 +145,11 @@
             <h3>GitOps Modernization</h3>
             <p>
               Make deployments repeatable, auditable, and safer across environments with practical GitOps patterns
-              that fit real engineering teams.
+              plus Kubernetes-native test gates for AI services and platform changes.
             </p>
             <ul>
               <li>Argo CD app and environment structure</li>
-              <li>Promotion and rollback practices</li>
+              <li>Promotion, rollback, and release checks</li>
               <li>Policy-ready delivery conventions</li>
             </ul>
           </article>
@@ -157,13 +159,59 @@
             <h3>Cloud & AI Cost Optimization</h3>
             <p>
               Identify waste, improve workload placement, and prepare for GPU or AI demand without letting cloud
-              spend become the hidden platform risk.
+              spend or inference scaling become the hidden platform risk.
             </p>
             <ul>
               <li>Kubernetes and cloud spend review</li>
-              <li>Workload right-sizing recommendations</li>
+              <li>Inference and workload right-sizing</li>
               <li>AI and GPU readiness guidance</li>
             </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="capabilities" class="section-band capabilities-section">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow">AI platform capabilities</p>
+          <h2>The operational layer around modern AI.</h2>
+          <p>
+            Kubekite turns fast-moving AI experiments into reliable platform capabilities your engineering team can
+            deploy, test, troubleshoot, and scale.
+          </p>
+        </div>
+
+        <div class="capabilities-grid">
+          <article class="capability-card reveal">
+            <span>01</span>
+            <h3>Kubernetes-native testing</h3>
+            <p>Run smoke, load, endpoint, and RAG evaluation checks close to the workloads they validate.</p>
+          </article>
+          <article class="capability-card reveal">
+            <span>02</span>
+            <h3>Runnable operations runbooks</h3>
+            <p>Capture deployment, incident, audit, and recovery workflows as executable operational assets.</p>
+          </article>
+          <article class="capability-card reveal">
+            <span>03</span>
+            <h3>AI SRE workflows</h3>
+            <p>Connect alerts, telemetry, logs, runbooks, and platform context for safer AI-assisted troubleshooting.</p>
+          </article>
+          <article class="capability-card reveal">
+            <span>04</span>
+            <h3>AI data foundation</h3>
+            <p>Design S3-compatible storage patterns for model artifacts, RAG sources, evaluation data, and logs.</p>
+          </article>
+          <article class="capability-card reveal">
+            <span>05</span>
+            <h3>GPU orchestration readiness</h3>
+            <p>Plan scheduling, quotas, team isolation, monitoring, and cost visibility before GPU demand spikes.</p>
+          </article>
+          <article class="capability-card reveal">
+            <span>06</span>
+            <h3>Scalable inference serving</h3>
+            <p>Shape online and batch inference paths with model routing, autoscaling, and performance observability.</p>
           </article>
         </div>
       </div>
@@ -182,7 +230,7 @@
         <div class="capability-list reveal">
           <div>
             <span>Deploy</span>
-            <p>Git-based releases, environment promotion, CI/CD integration, and deployment rollback paths.</p>
+            <p>Git-based releases, environment promotion, CI/CD integration, test gates, and deployment rollback paths.</p>
           </div>
           <div>
             <span>Secure</span>
@@ -190,11 +238,11 @@
           </div>
           <div>
             <span>Observe</span>
-            <p>Metrics, logs, traces, SLO signals, and LLM-aware telemetry for production troubleshooting.</p>
+            <p>Metrics, logs, traces, SLO signals, runbooks, and LLM-aware telemetry for production troubleshooting.</p>
           </div>
           <div>
             <span>Optimize</span>
-            <p>Cluster efficiency, workload sizing, storage review, GPU readiness, and cloud cost visibility.</p>
+            <p>Cluster efficiency, workload sizing, inference paths, storage review, GPU readiness, and cloud cost visibility.</p>
           </div>
         </div>
       </div>
@@ -208,8 +256,8 @@
         </div>
         <p>
           Kubekite is built around senior DevOps and platform engineering experience: Kubernetes operations,
-          GitOps delivery, cloud architecture, security integration, and the practical tradeoffs that show up
-          when systems move from demos to real users.
+          GitOps delivery, cloud architecture, security integration, AI data paths, operational runbooks, and the
+          practical tradeoffs that show up when systems move from demos to real users.
         </p>
         <div class="why-metrics" aria-label="Kubekite strengths">
           <div>
@@ -265,6 +313,7 @@
       </div>
       <div class="footer-links" aria-label="Footer links">
         <a href="#offerings">Offerings</a>
+        <a href="#capabilities">Capabilities</a>
         <a href="#why">Why Kubekite</a>
         <a href="#assessment">Book Assessment</a>
       </div>
