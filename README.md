@@ -1,51 +1,40 @@
+# Kubekite - AI Infrastructure & Platform Engineering
 
-# Kubekite - Future of Technology Solutions
-
-A modern, responsive website showcasing technology solutions and services with a sleek cyberpunk-inspired design.
+Static website for Kubekite, positioned around AI infrastructure, Kubernetes, GitOps, cloud platforms, observability, security, and cost optimization.
 
 ## Features
 
-- Custom cursor animation
-- Smooth scrolling navigation
-- Intersection Observer for fade-in animations
-- Typewriter effect on hero text
-- Lazy loading images
-- Glassmorphism UI elements
-- Responsive design for all devices
+- Single-page consulting homepage
+- Productized service offering sections
+- Architecture-style platform visual
+- Smooth anchor navigation
+- Lightweight reveal-on-scroll interaction
+- Embedded Google Form for AI platform assessment requests
+- Responsive layout for mobile, tablet, and desktop
 
 ## Technologies Used
 
 - HTML5
-- CSS3 (with custom properties and animations)
-- JavaScript (Vanilla)
-- Font Awesome icons
+- CSS3
+- Vanilla JavaScript
 - Google Forms integration
 
 ## Sections
 
-- Hero section with animated gradient
-- Services showcase
-- Portfolio gallery
-- About section
-- Contact form
-- Footer with social links
+- Hero and assessment CTA
+- Platform trust strip
+- Productized offerings
+- Operating model
+- Founder-led credibility
+- Assessment request form
+- Footer
 
 ## Local Development
 
-1. Clone the repository
-2. Open index.html in your browser
-3. For live reload and development features, use Replit
-
-## Credits
-
-- Font Awesome for icons
-- Google Forms for contact form functionality
-- SF Pro Display font family
+Open `index.html` in a browser. The site is static and does not require a build step.
 
 ## License
 
 MIT License
 
-Copyright (c) 2024 Kubekite
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software.
+Copyright (c) 2026 Kubekite

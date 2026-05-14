@@ -1,69 +1,45 @@
+document.documentElement.classList.add("js");
 
-// Custom cursor
-const cursor = document.querySelector('.cursor');
-document.addEventListener('mousemove', (e) => {
-  cursor.style.left = e.clientX + 'px';
-  cursor.style.top = e.clientY + 'px';
-});
+const header = document.querySelector(".site-header");
 
-// Smooth scrolling
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", (event) => {
+    const target = document.querySelector(anchor.getAttribute("href"));
+
+    if (!target) {
+      return;
+    }
+
+    event.preventDefault();
+    const headerOffset = header ? header.offsetHeight + 16 : 0;
+    const targetTop = target.getBoundingClientRect().top + window.scrollY - headerOffset;
+
+    window.scrollTo({
+      top: targetTop,
+      behavior: "smooth"
     });
   });
 });
 
-// Intersection Observer for fade-in animations
-const observerOptions = {
-  threshold: 0.1,
-  rootMargin: "0px 0px -50px 0px"
-};
+const revealElements = document.querySelectorAll(".reveal");
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = "1";
-      entry.target.style.transform = "translateY(0)";
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.12,
+      rootMargin: "0px 0px -40px 0px"
     }
-  });
-}, observerOptions);
+  );
 
-document.querySelectorAll('.service-card, .portfolio-item, .section-title').forEach((el) => {
-  el.style.opacity = "0";
-  el.style.transform = "translateY(20px)";
-  el.style.transition = "all 0.6s ease-out";
-  observer.observe(el);
-});
-
-// Typewriter effect
-const text = document.querySelector('.typewriter');
-if (text) {
-  const originalText = text.textContent;
-  text.textContent = '';
-  let index = 0;
-
-  function typeWriter() {
-    if (index < originalText.length) {
-      text.textContent += originalText.charAt(index);
-      index++;
-      setTimeout(typeWriter, 50);
-    }
-  }
-
-  setTimeout(typeWriter, 1000);
-}
-
-// Lazy loading for images
-if ('loading' in HTMLImageElement.prototype) {
-  const images = document.querySelectorAll('img[loading="lazy"]');
-  images.forEach(img => {
-    img.src = img.src;
-  });
+  revealElements.forEach((element) => revealObserver.observe(element));
 } else {
-  const script = document.createElement('script');
-  script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
-  document.body.appendChild(script);
+  revealElements.forEach((element) => element.classList.add("is-visible"));
 }
