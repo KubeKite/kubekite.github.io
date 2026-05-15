@@ -623,6 +623,48 @@ h3 {
   color: var(--muted);
 }
 
+.proof-section {
+  background: var(--surface-soft);
+}
+
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.proof-card {
+  min-height: 270px;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 14px 30px rgba(20, 33, 47, 0.05);
+}
+
+.proof-card span {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: rgba(18, 108, 122, 0.1);
+  color: var(--brand);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.proof-card h3 {
+  margin-top: 22px;
+}
+
+.proof-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
 .insights-section {
   background: #ffffff;
 }
@@ -781,6 +823,7 @@ h3 {
   .offerings-grid,
   .service-tracks,
   .capabilities-grid,
+  .proof-grid,
   .insights-grid,
   .trust-grid,
   .why-metrics {
@@ -825,6 +868,7 @@ h3 {
   .offerings-grid,
   .service-tracks,
   .capabilities-grid,
+  .proof-grid,
   .insights-grid,
   .trust-grid,
   .why-metrics,

@@ -1,6 +1,6 @@
-# Kubekite - Enterprise AI & Kubernetes Platforms
+# KubeKite - Kubernetes & AI Platform Engineering
 
-Static website for Kubekite, positioned around secure AI-ready cloud platforms on AWS and Kubernetes with EKS, GitOps, Argo CD, Vault/IAM, chatbot infrastructure, MCP, RAG, Ray, GPU workload optimization, operational runbooks, AI SRE workflows, observability, and cost optimization.
+Static website for KubeKite, positioned around secure AI-ready cloud platforms on AWS and Kubernetes with EKS, GitOps, Argo CD, Vault/IAM/SSO, chatbot infrastructure, MCP, RAG, Ray, GPU workload optimization, operational runbooks, AI SRE workflows, observability, and cost optimization.
 
 ## Features
 
@@ -10,6 +10,7 @@ Static website for Kubekite, positioned around secure AI-ready cloud platforms o
 - Platform blueprint section
 - AI platform capabilities section
 - Founder-led credibility section
+- Case-study proof section
 - Technical content roadmap section
 - Architecture-style platform visual
 - Smooth anchor navigation
@@ -31,8 +32,9 @@ Static website for Kubekite, positioned around secure AI-ready cloud platforms o
 - Productized offerings
 - Platform blueprint
 - AI platform capabilities
-- Why Kubekite differentiation
+- Why KubeKite differentiation
 - Founder-led credibility
+- Case-study proof tracks
 - Technical content roadmap
 - Assessment request form
 - Footer
@@ -45,4 +47,4 @@ Open `index.html` in a browser. The site is static and does not require a build 
 
 MIT License
 
-Copyright (c) 2026 Kubekite
+Copyright (c) 2026 KubeKite
