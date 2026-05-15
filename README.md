@@ -9,6 +9,8 @@ Static website for Kubekite, positioned around secure AI-ready cloud platforms o
 - Specialized service tracks for EKS, GitOps, DevSecOps, platform engineering, and cost optimization
 - Platform blueprint section
 - AI platform capabilities section
+- Founder-led credibility section
+- Technical content roadmap section
 - Architecture-style platform visual
 - Smooth anchor navigation
 - Lightweight reveal-on-scroll interaction
@@ -29,8 +31,9 @@ Static website for Kubekite, positioned around secure AI-ready cloud platforms o
 - Productized offerings
 - Platform blueprint
 - AI platform capabilities
-- Operating model
+- Why Kubekite differentiation
 - Founder-led credibility
+- Technical content roadmap
 - Assessment request form
 - Footer
 
