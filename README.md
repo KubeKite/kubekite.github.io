@@ -1,12 +1,12 @@
 # Kubekite - Enterprise AI & Kubernetes Platforms
 
-Static website for Kubekite, positioned around secure AI-ready cloud platforms on AWS and Kubernetes with EKS, GitOps, Argo CD, Vault/IAM, GPU readiness, operational runbooks, AI SRE workflows, observability, and cost optimization.
+Static website for Kubekite, positioned around secure AI-ready cloud platforms on AWS and Kubernetes with EKS, GitOps, Argo CD, Vault/IAM, chatbot infrastructure, MCP, RAG, Ray, GPU workload optimization, operational runbooks, AI SRE workflows, observability, and cost optimization.
 
 ## Features
 
 - Single-page consulting homepage
 - Productized service offering sections
-- Specialized service tracks for EKS, GitOps, DevSecOps, platform engineering, and cost optimization
+- Specialized service tracks for EKS, GitOps, DevSecOps, chatbot/MCP/RAG infrastructure, Ray workloads, platform engineering, and cost optimization
 - Platform blueprint section
 - AI platform capabilities section
 - Founder-led credibility section

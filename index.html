@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kubekite - Enterprise AI & Kubernetes Platforms</title>
-  <meta name="description" content="Kubekite helps startups and enterprises deploy secure AI and Kubernetes platforms on AWS with EKS, GitOps, Argo CD, Vault, observability, GPU readiness, and cost control.">
-  <meta name="keywords" content="AI infrastructure, platform engineering, Kubernetes, EKS, GitOps, Argo CD, DevOps, GPU orchestration, AI SRE, inference serving, cloud cost optimization">
+  <meta name="description" content="Kubekite helps startups and enterprises deploy secure AI and Kubernetes platforms on AWS with EKS, GitOps, Argo CD, Vault, RAG, MCP, chatbot infrastructure, Ray, GPU optimization, and cost control.">
+  <meta name="keywords" content="AI infrastructure, platform engineering, Kubernetes, EKS, GitOps, Argo CD, DevOps, RAG infrastructure, MCP, chatbot infrastructure, Ray, Run:ai, GPU orchestration, AI SRE, inference serving, cloud cost optimization">
   <link rel="preload" href="assets/css/styles.css" as="style">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="assets/js/script.js" defer></script>
@@ -35,7 +35,8 @@
           <h1>Secure AI-ready platforms on AWS and Kubernetes.</h1>
           <p class="hero-lede">
             Kubekite helps startups and enterprise teams design secure, scalable cloud platforms for AI workloads,
-            GitOps, and modern infrastructure using EKS, Argo CD, Vault, observability, and cost controls.
+            chatbots, MCP servers, RAG systems, GitOps, and optimized inference using EKS, Argo CD, Vault, Ray,
+            GPU orchestration, observability, and cost controls.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#assessment">Book Architecture Review</a>
@@ -46,7 +47,8 @@
             <span>Kubernetes</span>
             <span>Argo CD</span>
             <span>Vault / IAM</span>
-            <span>DevSecOps</span>
+            <span>RAG / MCP</span>
+            <span>Ray / GPU</span>
           </div>
         </div>
 
@@ -70,7 +72,7 @@
             </div>
             <div class="arch-node accent">
               <span class="node-label">AI Workloads</span>
-              <strong>RAG + Inference</strong>
+              <strong>Chatbots + RAG</strong>
             </div>
           </div>
           <div class="signal-grid">
@@ -111,7 +113,7 @@
         </div>
         <div>
           <span>04</span>
-          <strong>AI workloads, SRE, and cost control</strong>
+          <strong>Chatbots, RAG, Ray, and cost control</strong>
         </div>
       </div>
     </section>
@@ -133,12 +135,12 @@
             <h3>AI Platform Starter</h3>
             <p>
               Build a production foundation for AI workloads with EKS or Kubernetes, GitOps, CI/CD, secrets,
-              observability, AI data storage, and deployment paths for model or RAG services.
+              observability, AI data storage, and deployment paths for chatbots, MCP services, models, or RAG systems.
             </p>
             <ul>
               <li>EKS or Kubernetes platform baseline</li>
               <li>Argo CD delivery workflow</li>
-              <li>Secrets, IAM, storage, and runtime guardrails</li>
+              <li>Secrets, IAM, storage, and AI runtime guardrails</li>
             </ul>
           </article>
 
@@ -161,12 +163,12 @@
             <h3>Cloud & AI Cost Optimization</h3>
             <p>
               Identify waste, improve workload placement, and prepare for GPU or AI demand without letting cloud
-              spend or inference scaling become the hidden platform risk.
+              spend, Ray workloads, or inference scaling become the hidden platform risk.
             </p>
             <ul>
               <li>Kubernetes and cloud spend review</li>
-              <li>Inference and workload right-sizing</li>
-              <li>AI and GPU readiness guidance</li>
+              <li>Ray, inference, and workload right-sizing</li>
+              <li>Run:ai-style GPU readiness guidance</li>
             </ul>
           </article>
         </div>
@@ -174,7 +176,7 @@
         <div class="service-tracks reveal" aria-label="Specialized service tracks">
           <div>
             <span>AI Infrastructure</span>
-            <strong>Secure RAG, inference, model deployment, and evaluation paths.</strong>
+            <strong>Secure chatbot, MCP, RAG, inference, model deployment, and evaluation paths.</strong>
           </div>
           <div>
             <span>Kubernetes Platforms</span>
@@ -194,7 +196,7 @@
           </div>
           <div>
             <span>Cloud Cost Optimization</span>
-            <strong>Kubernetes spend, workload sizing, GPU readiness, and scaling strategy.</strong>
+            <strong>Kubernetes spend, Ray workloads, GPU readiness, and scaling strategy.</strong>
           </div>
         </div>
       </div>
@@ -207,7 +209,7 @@
           <h2>A practical reference architecture for production AI.</h2>
           <p>
             Kubekite focuses on the pieces AI teams usually underestimate: secure delivery, identity, runtime
-            operations, data paths, observability, and cost-aware scaling.
+            operations, MCP and RAG data paths, chatbot reliability, observability, and cost-aware scaling.
           </p>
           <a class="inline-link" href="#assessment">Request a blueprint review</a>
         </div>
@@ -221,7 +223,7 @@
           <div class="blueprint-lane">
             <span>Platform Runtime</span>
             <strong>AWS / EKS</strong>
-            <strong>Multi-Cluster</strong>
+            <strong>Ray Clusters</strong>
             <strong>GPU Pools</strong>
           </div>
           <div class="blueprint-lane">
@@ -232,9 +234,9 @@
           </div>
           <div class="blueprint-lane">
             <span>AI Workloads</span>
+            <strong>Chatbots / MCP</strong>
             <strong>RAG Services</strong>
             <strong>Inference APIs</strong>
-            <strong>Evaluation Jobs</strong>
           </div>
           <div class="blueprint-lane">
             <span>Operations</span>
@@ -253,7 +255,7 @@
           <h2>The operational layer around modern AI.</h2>
           <p>
             Kubekite turns fast-moving AI experiments into reliable platform capabilities your engineering team can
-            deploy, test, troubleshoot, secure, and scale.
+            deploy, test, troubleshoot, secure, and scale across AI startup and enterprise environments.
           </p>
         </div>
 
@@ -275,18 +277,28 @@
           </article>
           <article class="capability-card reveal">
             <span>04</span>
+            <h3>Chatbot, MCP, and RAG infrastructure</h3>
+            <p>Deploy secure retrieval, tool, and agent backends with identity, secrets, data access, and observability.</p>
+          </article>
+          <article class="capability-card reveal">
+            <span>05</span>
             <h3>AI data foundation</h3>
             <p>Design S3-compatible storage patterns for model artifacts, RAG sources, evaluation data, and logs.</p>
           </article>
           <article class="capability-card reveal">
-            <span>05</span>
-            <h3>GPU orchestration readiness</h3>
-            <p>Plan scheduling, quotas, team isolation, monitoring, and cost visibility before GPU demand spikes.</p>
+            <span>06</span>
+            <h3>Ray and GPU workload optimization</h3>
+            <p>Plan Ray clusters, GPU scheduling, quotas, team isolation, monitoring, and cost visibility.</p>
           </article>
           <article class="capability-card reveal">
-            <span>06</span>
+            <span>07</span>
             <h3>Scalable inference serving</h3>
             <p>Shape online and batch inference paths with model routing, autoscaling, and performance observability.</p>
+          </article>
+          <article class="capability-card reveal">
+            <span>08</span>
+            <h3>AI startup platform support</h3>
+            <p>Help AI startup teams move from demo infrastructure to secure, repeatable, investor-ready platforms.</p>
           </article>
         </div>
       </div>
@@ -317,7 +329,7 @@
           </div>
           <div>
             <span>AI-ready reliability</span>
-            <p>Observability, AI SRE workflows, runbooks, inference paths, GPU readiness, and cost-aware scaling.</p>
+            <p>Chatbot reliability, MCP and RAG paths, AI SRE workflows, Ray workloads, GPU readiness, and cost-aware scaling.</p>
           </div>
         </div>
       </div>
@@ -331,8 +343,9 @@
         </div>
         <p>
           Kubekite is built around senior DevOps and platform engineering experience: Kubernetes operations,
-          EKS modernization, GitOps delivery, cloud architecture, Vault and IAM integration, AI data paths,
-          operational runbooks, and the practical tradeoffs that show up when systems move from demos to real users.
+          EKS modernization, GitOps delivery, cloud architecture, Vault and IAM integration, chatbot and RAG
+          infrastructure, MCP services, Ray-based workloads, AI startup environments, operational runbooks, and the
+          practical tradeoffs that show up when systems move from demos to real users.
         </p>
         <div class="why-metrics" aria-label="Kubekite strengths">
           <div>
@@ -365,7 +378,7 @@
           <article class="insight-card reveal">
             <span>Guide</span>
             <h3>Secure AI infrastructure on EKS</h3>
-            <p>Network boundaries, secrets, IAM, observability, and deployment paths for RAG and inference services.</p>
+            <p>Network boundaries, secrets, IAM, observability, and deployment paths for chatbots, MCP, RAG, and inference services.</p>
           </article>
           <article class="insight-card reveal">
             <span>Pattern</span>
@@ -379,8 +392,13 @@
           </article>
           <article class="insight-card reveal">
             <span>Playbook</span>
-            <h3>Kubernetes cost optimization</h3>
-            <p>Workload sizing, cluster efficiency, GPU readiness, storage review, and cost telemetry.</p>
+            <h3>Ray and GPU workload optimization</h3>
+            <p>Workload sizing, cluster efficiency, GPU scheduling, Run:ai-style controls, and cost telemetry.</p>
+          </article>
+          <article class="insight-card reveal">
+            <span>Blueprint</span>
+            <h3>Production chatbot and RAG architecture</h3>
+            <p>Retrieval data paths, MCP/tool servers, secrets, evaluation jobs, observability, and release workflows.</p>
           </article>
         </div>
       </div>
@@ -393,7 +411,7 @@
           <h2>Pressure-test your AI or Kubernetes platform direction.</h2>
           <p>
             Share where your team is today. Kubekite will review your goals and help identify the platform,
-            security, delivery, operating model, and cost decisions that matter first.
+            security, delivery, AI runtime, operating model, and cost decisions that matter first.
           </p>
         </div>
         <div class="form-shell reveal">
@@ -419,7 +437,7 @@
           <span class="brand-mark">K</span>
           <span>Kubekite</span>
         </a>
-        <p>AI infrastructure and platform engineering for production-ready systems.</p>
+        <p>AI infrastructure and platform engineering for chatbots, MCP, RAG, Ray, and production-ready systems.</p>
       </div>
       <div class="footer-links" aria-label="Footer links">
         <a href="#offerings">Offerings</a>
