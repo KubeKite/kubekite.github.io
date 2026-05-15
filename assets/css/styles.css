@@ -589,12 +589,22 @@ h3 {
 .why-panel {
   display: grid;
   grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
+  align-items: start;
   gap: 36px;
   padding: 42px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #ffffff;
   box-shadow: 0 16px 34px rgba(20, 33, 47, 0.06);
+}
+
+.why-copy {
+  display: grid;
+  gap: 16px;
+}
+
+.why-copy p {
+  margin-bottom: 0;
 }
 
 .why-metrics {
