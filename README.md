@@ -10,7 +10,7 @@ Static website for KubeKite, positioned around secure AI-ready cloud platforms o
 - Platform blueprint section
 - AI platform capabilities section
 - Founder-led credibility section
-- Case-study proof section
+- Proof section for architecture diagrams, case studies, implementation examples, technical posts, and GitHub repos
 - Technical content roadmap section
 - Architecture-style platform visual
 - Smooth anchor navigation
@@ -34,7 +34,7 @@ Static website for KubeKite, positioned around secure AI-ready cloud platforms o
 - AI platform capabilities
 - Why KubeKite differentiation
 - Founder-led credibility
-- Case-study proof tracks
+- Proof and specificity assets
 - Technical content roadmap
 - Assessment request form
 - Footer
