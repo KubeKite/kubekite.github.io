@@ -215,7 +215,8 @@ h3 {
 }
 
 .hero-proof span,
-.card-kicker {
+.card-kicker,
+.inline-link {
   display: inline-flex;
   align-items: center;
   min-height: 30px;
@@ -226,6 +227,14 @@ h3 {
   color: var(--muted);
   font-size: 0.82rem;
   font-weight: 700;
+}
+
+.inline-link {
+  min-height: 38px;
+  margin-top: 8px;
+  color: var(--brand-dark);
+  border-color: rgba(18, 108, 122, 0.22);
+  background: rgba(18, 108, 122, 0.08);
 }
 
 .architecture-card {
@@ -419,8 +428,101 @@ h3 {
   background: var(--brand);
 }
 
+.service-tracks {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 28px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--line);
+}
+
+.service-tracks div {
+  min-height: 148px;
+  padding: 22px;
+  background: #ffffff;
+}
+
+.service-tracks span {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--brand);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.service-tracks strong {
+  display: block;
+  color: var(--ink);
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
 .platform-section {
   background: var(--surface-soft);
+}
+
+.blueprint-section {
+  background: var(--ink);
+  color: #ffffff;
+}
+
+.blueprint-section h2,
+.blueprint-section .section-heading p:not(.eyebrow) {
+  color: #ffffff;
+}
+
+.blueprint-section .section-heading p:not(.eyebrow) {
+  color: #b8c6ce;
+}
+
+.blueprint-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.68fr) minmax(0, 1fr);
+  gap: 42px;
+  align-items: start;
+}
+
+.blueprint-map {
+  display: grid;
+  gap: 12px;
+}
+
+.blueprint-lane {
+  display: grid;
+  grid-template-columns: minmax(120px, 0.65fr) repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.blueprint-lane span,
+.blueprint-lane strong {
+  display: flex;
+  align-items: center;
+  min-height: 62px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.07);
+  line-height: 1.25;
+}
+
+.blueprint-lane span {
+  color: #8fb4bd;
+  font-size: 0.77rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.blueprint-lane strong {
+  color: #ffffff;
+  font-size: 0.95rem;
 }
 
 .capabilities-section {
@@ -620,6 +722,7 @@ h3 {
   }
 
   .hero-grid,
+  .blueprint-grid,
   .platform-grid,
   .why-panel {
     grid-template-columns: 1fr;
@@ -630,6 +733,7 @@ h3 {
   }
 
   .offerings-grid,
+  .service-tracks,
   .capabilities-grid,
   .trust-grid,
   .why-metrics {
@@ -672,6 +776,7 @@ h3 {
   }
 
   .offerings-grid,
+  .service-tracks,
   .capabilities-grid,
   .trust-grid,
   .why-metrics,
@@ -681,6 +786,10 @@ h3 {
 
   .offering-card {
     min-height: auto;
+  }
+
+  .blueprint-lane {
+    grid-template-columns: 1fr;
   }
 
   .footer-grid,
