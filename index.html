@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KubeKite - Kubernetes & AI Platform Engineering</title>
-  <meta name="description" content="KubeKite helps startups and enterprises deploy secure AI and Kubernetes platforms on AWS with EKS, GitOps, Argo CD, Vault, RAG, MCP, chatbot infrastructure, Ray, GPU optimization, and cost control.">
-  <meta name="keywords" content="AI infrastructure, platform engineering, Kubernetes, EKS, GitOps, Argo CD, DevOps, RAG infrastructure, MCP, chatbot infrastructure, Ray, Run:ai, GPU orchestration, AI SRE, inference serving, cloud cost optimization">
+  <meta name="description" content="KubeKite helps startups and enterprises deploy secure AI and Kubernetes platforms on AWS with EKS, GitOps, Backstage, Argo CD, Vault, RAG, MCP, chatbot infrastructure, Ray, GPU optimization, and cost control.">
+  <meta name="keywords" content="AI infrastructure, platform engineering, Kubernetes, EKS, GitOps, Backstage, Argo CD, Crossplane, Kratix, Terraform, Vault, RAG infrastructure, MCP, chatbot infrastructure, Ray, Run:ai, GPU orchestration, AI SRE, inference serving, cloud cost optimization">
   <link rel="preload" href="assets/css/styles.css" as="style">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="assets/js/script.js" defer></script>
@@ -18,6 +18,8 @@
     </a>
     <nav class="site-nav" aria-label="Primary navigation">
       <a href="#offerings">Offerings</a>
+      <a href="#accelerator">Accelerator</a>
+      <a href="#roadmap">Roadmap</a>
       <a href="#blueprint">Blueprint</a>
       <a href="#capabilities">Capabilities</a>
       <a href="#insights">Insights</a>
@@ -36,7 +38,7 @@
           <h1>Kubernetes & AI Platform Engineering.</h1>
           <p class="hero-lede">
             KubeKite helps startups and enterprises build secure, scalable cloud platforms using AWS, GitOps,
-            and modern AI infrastructure for chatbots, MCP servers, RAG systems, Ray workloads, and optimized inference.
+            Backstage, and modern AI infrastructure for chatbots, MCP servers, RAG systems, Ray workloads, and optimized inference.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#assessment">Book Architecture Review</a>
@@ -44,6 +46,7 @@
           </div>
           <div class="hero-proof" aria-label="Core capabilities">
             <span>AWS / EKS</span>
+            <span>Backstage</span>
             <span>Kubernetes</span>
             <span>Argo CD</span>
             <span>Vault / IAM / SSO</span>
@@ -192,11 +195,110 @@
           </div>
           <div>
             <span>Platform Engineering</span>
-            <strong>Reusable platform patterns, runbooks, enablement, and developer workflows.</strong>
+            <strong>Backstage portals, golden paths, reusable platform patterns, runbooks, and developer workflows.</strong>
           </div>
           <div>
             <span>Cloud Cost Optimization</span>
             <strong>Kubernetes spend, Ray workloads, GPU readiness, and scaling strategy.</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="accelerator" class="section-band accelerator-section">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Opinionated platform stack</p>
+          <h2>An AI-powered Platform Engineering Accelerator for AWS.</h2>
+          <p>
+            KubeKite is not a platform orchestrator replacement. It is an opinionated accelerator that combines
+            proven open-source platform components with AI-assisted operations for teams building on AWS and Kubernetes.
+          </p>
+        </div>
+        <div class="accelerator-layout">
+          <div class="accelerator-flow reveal" aria-label="KubeKite platform accelerator flow">
+            <div>
+              <span>Developer interface</span>
+              <strong>Backstage portal</strong>
+            </div>
+            <div>
+              <span>Golden paths</span>
+              <strong>Templates + paved workflows</strong>
+            </div>
+            <div>
+              <span>Provisioning</span>
+              <strong>Terraform / Crossplane / Kratix</strong>
+            </div>
+            <div>
+              <span>Delivery</span>
+              <strong>Argo CD GitOps</strong>
+            </div>
+            <div>
+              <span>Runtime</span>
+              <strong>EKS / AI clusters</strong>
+            </div>
+            <div class="accent">
+              <span>AI operations</span>
+              <strong>KubeKite AI assistant</strong>
+            </div>
+          </div>
+          <div class="accelerator-notes reveal">
+            <article>
+              <span>Built on foundations</span>
+              <p>Backstage for the portal, Argo CD for delivery, Vault for secrets, Terraform or Crossplane for provisioning, and Grafana plus Prometheus for observability.</p>
+            </article>
+            <article>
+              <span>Clear differentiation</span>
+              <p>The KubeKite layer focuses on AI-assisted root-cause analysis, operational troubleshooting, AI infrastructure management, and production platform runbooks.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap" class="section-band roadmap-section">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow">KubeKite v1</p>
+          <h2>Three plugins, one demo-worthy platform stack.</h2>
+          <p>
+            The first version stays focused: a Backstage-based platform accelerator with AI troubleshooting,
+            golden paths, and a scorecard that makes platform maturity visible.
+          </p>
+        </div>
+        <div class="roadmap-grid">
+          <article class="roadmap-card reveal">
+            <span>Plugin 01</span>
+            <h3>KubeKite AI Troubleshooter</h3>
+            <p>Collect Kubernetes events, Argo CD status, logs, and metrics to explain failures and suggest safe remediation steps.</p>
+          </article>
+          <article class="roadmap-card reveal">
+            <span>Plugin 02</span>
+            <h3>KubeKite Golden Path</h3>
+            <p>Create service templates that provision repositories, namespaces, Argo CD apps, IAM roles, monitoring, and runbooks.</p>
+          </article>
+          <article class="roadmap-card reveal">
+            <span>Plugin 03</span>
+            <h3>KubeKite Platform Scorecard</h3>
+            <p>Score GitOps adoption, secret management, observability, security posture, operational readiness, and delivery health.</p>
+          </article>
+        </div>
+        <div class="timeline reveal" aria-label="90-day KubeKite roadmap">
+          <div>
+            <span>Weeks 1-2</span>
+            <strong>Backstage + GitHub + Argo CD + Vault foundation</strong>
+          </div>
+          <div>
+            <span>Weeks 3-4</span>
+            <strong>Golden Path templates and service bootstrap workflows</strong>
+          </div>
+          <div>
+            <span>Weeks 5-6</span>
+            <strong>AI Troubleshooter MVP across Kubernetes, Argo CD, logs, and metrics</strong>
+          </div>
+          <div>
+            <span>Weeks 7-8</span>
+            <strong>Platform Scorecard and demo-ready maturity reporting</strong>
           </div>
         </div>
       </div>
@@ -216,9 +318,15 @@
         <div class="blueprint-map reveal" aria-label="AI platform blueprint">
           <div class="blueprint-lane">
             <span>Source & Delivery</span>
-            <strong>GitHub / CI</strong>
+            <strong>Backstage / CI</strong>
             <strong>Argo CD</strong>
             <strong>Policy Gates</strong>
+          </div>
+          <div class="blueprint-lane">
+            <span>Provisioning</span>
+            <strong>Terraform</strong>
+            <strong>Crossplane</strong>
+            <strong>Kratix</strong>
           </div>
           <div class="blueprint-lane">
             <span>Platform Runtime</span>
@@ -321,7 +429,7 @@
           </div>
           <div>
             <span>GitOps-first deployments</span>
-            <p>Argo CD delivery, app-of-apps structures, environment promotion, rollback, and release auditability.</p>
+            <p>Backstage golden paths, Argo CD delivery, app-of-apps structures, environment promotion, rollback, and release auditability.</p>
           </div>
           <div>
             <span>Secure cloud architecture</span>
@@ -489,6 +597,8 @@
       </div>
       <div class="footer-links" aria-label="Footer links">
         <a href="#offerings">Offerings</a>
+        <a href="#accelerator">Accelerator</a>
+        <a href="#roadmap">Roadmap</a>
         <a href="#blueprint">Blueprint</a>
         <a href="#capabilities">Capabilities</a>
         <a href="#insights">Insights</a>
