@@ -9,7 +9,7 @@
   --brand-dark: #0b4350;
   --accent: #d97706;
   --success: #0d9488;
-  --shadow: 0 22px 70px rgba(20, 33, 47, 0.12);
+  --shadow: 0 18px 46px rgba(20, 33, 47, 0.1);
   --radius: 8px;
   --max-width: 1180px;
 }
@@ -29,6 +29,7 @@ body {
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
+  font-size: 15.5px;
 }
 
 a {
@@ -50,8 +51,8 @@ h3 {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: 28px;
-  padding: 16px max(24px, calc((100vw - var(--max-width)) / 2));
+  gap: 24px;
+  padding: 14px max(24px, calc((100vw - var(--max-width)) / 2));
   background: rgba(247, 249, 252, 0.92);
   border-bottom: 1px solid rgba(219, 228, 234, 0.84);
   backdrop-filter: blur(16px);
@@ -63,13 +64,14 @@ h3 {
   gap: 10px;
   color: var(--ink);
   font-weight: 800;
+  font-size: 0.96rem;
   letter-spacing: 0;
 }
 
 .brand-mark {
   display: grid;
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   place-items: center;
   border-radius: 8px;
   background: var(--brand-dark);
@@ -81,9 +83,9 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 22px;
+  gap: 18px;
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   font-weight: 650;
 }
 
@@ -113,11 +115,13 @@ h3 {
   padding: 0 18px;
   background: var(--ink);
   color: #ffffff;
-  font-size: 0.92rem;
+  font-size: 0.86rem;
 }
 
 .button {
-  padding: 0 22px;
+  min-height: 42px;
+  padding: 0 18px;
+  font-size: 0.92rem;
   border: 1px solid transparent;
 }
 
@@ -139,7 +143,7 @@ h3 {
 }
 
 .section-band {
-  padding: 96px 24px;
+  padding: 76px 24px;
 }
 
 .section-inner {
@@ -148,7 +152,7 @@ h3 {
 }
 
 .hero {
-  padding-top: 84px;
+  padding-top: 70px;
   background:
     linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 74%),
     radial-gradient(circle at 90% 10%, rgba(18, 108, 122, 0.13), transparent 34%),
@@ -158,60 +162,60 @@ h3 {
 .hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.02fr) minmax(360px, 0.78fr);
-  gap: 56px;
+  gap: 48px;
   align-items: center;
 }
 
 .eyebrow {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   color: var(--brand);
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
 h1 {
-  max-width: 840px;
-  margin-bottom: 22px;
-  font-size: clamp(2.7rem, 6vw, 5.35rem);
-  line-height: 0.96;
+  max-width: 760px;
+  margin-bottom: 18px;
+  font-size: clamp(2.25rem, 4.7vw, 4.15rem);
+  line-height: 1.02;
   letter-spacing: 0;
 }
 
 h2 {
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   color: var(--ink);
-  font-size: clamp(2rem, 4vw, 3.35rem);
-  line-height: 1.05;
+  font-size: clamp(1.6rem, 3vw, 2.45rem);
+  line-height: 1.12;
   letter-spacing: 0;
 }
 
 h3 {
-  margin-bottom: 14px;
+  margin-bottom: 12px;
   color: var(--ink);
-  font-size: 1.35rem;
-  line-height: 1.2;
+  font-size: 1.08rem;
+  line-height: 1.28;
 }
 
 .hero-lede {
-  max-width: 720px;
-  margin-bottom: 30px;
+  max-width: 670px;
+  margin-bottom: 24px;
   color: var(--muted);
-  font-size: clamp(1.05rem, 2vw, 1.24rem);
+  font-size: clamp(1rem, 1.5vw, 1.12rem);
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  margin-bottom: 28px;
+  margin-bottom: 22px;
 }
 
 .hero-proof {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
 }
 
 .hero-proof span,
@@ -219,12 +223,12 @@ h3 {
   display: inline-flex;
   align-items: center;
   min-height: 30px;
-  padding: 0 11px;
+  padding: 0 10px;
   border: 1px solid var(--line);
   border-radius: 999px;
   background: #ffffff;
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: 0.76rem;
   font-weight: 700;
 }
 
@@ -240,11 +244,11 @@ h3 {
   display: flex;
   align-items: center;
   gap: 10px;
-  min-height: 54px;
-  padding: 0 18px;
+  min-height: 48px;
+  padding: 0 16px;
   border-bottom: 1px solid var(--line);
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.84rem;
   font-weight: 750;
 }
 
@@ -258,8 +262,8 @@ h3 {
 
 .architecture-flow {
   display: grid;
-  gap: 14px;
-  padding: 22px;
+  gap: 12px;
+  padding: 18px;
   background:
     linear-gradient(90deg, rgba(219, 228, 234, 0.58) 1px, transparent 1px),
     linear-gradient(0deg, rgba(219, 228, 234, 0.58) 1px, transparent 1px);
@@ -269,8 +273,8 @@ h3 {
 
 .arch-node {
   position: relative;
-  min-height: 84px;
-  padding: 16px;
+  min-height: 74px;
+  padding: 14px;
   border: 1px solid var(--line);
   border-left: 4px solid var(--brand);
   border-radius: 8px;
@@ -298,7 +302,7 @@ h3 {
 .capability-list span {
   display: block;
   color: var(--muted);
-  font-size: 0.77rem;
+  font-size: 0.7rem;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -307,7 +311,7 @@ h3 {
 .arch-node strong {
   display: block;
   margin-top: 5px;
-  font-size: 1.18rem;
+  font-size: 1.02rem;
 }
 
 .signal-grid {
@@ -319,18 +323,18 @@ h3 {
 }
 
 .signal-grid div {
-  padding: 18px;
+  padding: 15px;
   background: #ffffff;
 }
 
 .signal-grid strong {
   display: block;
   margin-top: 5px;
-  font-size: 0.98rem;
+  font-size: 0.9rem;
 }
 
 .trust-strip {
-  padding: 28px 24px;
+  padding: 22px 24px;
   background: var(--ink);
   color: #ffffff;
 }
@@ -344,8 +348,8 @@ h3 {
 }
 
 .trust-grid div {
-  min-height: 94px;
-  padding: 20px;
+  min-height: 82px;
+  padding: 17px;
   background: var(--ink);
 }
 
@@ -356,37 +360,37 @@ h3 {
 .trust-grid strong {
   display: block;
   margin-top: 8px;
-  font-size: 1rem;
+  font-size: 0.92rem;
   line-height: 1.35;
 }
 
 .section-heading {
-  max-width: 760px;
-  margin-bottom: 38px;
+  max-width: 700px;
+  margin-bottom: 30px;
 }
 
 .section-heading p:not(.eyebrow),
 .assessment-intro p,
 .why-panel p {
   color: var(--muted);
-  font-size: 1.08rem;
+  font-size: 0.98rem;
 }
 
 .offerings-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
+  gap: 16px;
 }
 
 .offering-card {
   display: flex;
-  min-height: 430px;
+  min-height: 360px;
   flex-direction: column;
-  padding: 28px;
+  padding: 22px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
-  box-shadow: 0 16px 34px rgba(20, 33, 47, 0.06);
+  box-shadow: 0 12px 28px rgba(20, 33, 47, 0.05);
 }
 
 .offering-card p {
@@ -395,9 +399,9 @@ h3 {
 
 .offering-card ul {
   display: grid;
-  gap: 12px;
+  gap: 9px;
   margin: auto 0 0;
-  padding: 22px 0 0;
+  padding: 18px 0 0;
   color: var(--ink);
   list-style: none;
 }
@@ -429,14 +433,14 @@ h3 {
 .accelerator-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(320px, 0.62fr);
-  gap: 24px;
+  gap: 18px;
   align-items: stretch;
 }
 
 .accelerator-flow {
   display: grid;
-  gap: 12px;
-  padding: 26px;
+  gap: 10px;
+  padding: 20px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background:
@@ -448,7 +452,7 @@ h3 {
 
 .accelerator-flow div {
   position: relative;
-  padding: 18px;
+  padding: 15px;
   border: 1px solid var(--line);
   border-left: 4px solid var(--brand);
   border-radius: 8px;
@@ -474,7 +478,7 @@ h3 {
 .accelerator-notes span {
   display: block;
   color: var(--muted);
-  font-size: 0.77rem;
+  font-size: 0.7rem;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -483,7 +487,7 @@ h3 {
 .accelerator-flow strong {
   display: block;
   margin-top: 6px;
-  font-size: 1.15rem;
+  font-size: 1rem;
 }
 
 .accelerator-notes {
@@ -492,7 +496,7 @@ h3 {
 }
 
 .accelerator-notes article {
-  padding: 24px;
+  padding: 20px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface-soft);
@@ -506,17 +510,17 @@ h3 {
 .platform-grid {
   display: grid;
   grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
-  gap: 44px;
+  gap: 34px;
   align-items: start;
 }
 
 .capability-list {
   display: grid;
-  gap: 14px;
+  gap: 12px;
 }
 
 .capability-list div {
-  padding: 22px;
+  padding: 18px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #ffffff;
@@ -528,15 +532,15 @@ h3 {
 }
 
 .why-list div {
-  min-height: 138px;
+  min-height: 120px;
 }
 
 .why-panel {
   display: grid;
   grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
   align-items: start;
-  gap: 36px;
-  padding: 42px;
+  gap: 30px;
+  padding: 32px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #ffffff;
@@ -545,7 +549,7 @@ h3 {
 
 .why-copy {
   display: grid;
-  gap: 16px;
+  gap: 12px;
 }
 
 .why-copy p {
@@ -564,7 +568,7 @@ h3 {
 }
 
 .why-metrics div {
-  padding: 22px;
+  padding: 18px;
   background: #fbfdff;
 }
 
@@ -585,34 +589,34 @@ h3 {
 .proof-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 18px;
+  gap: 16px;
 }
 
 .proof-card {
-  min-height: 270px;
-  padding: 26px;
+  min-height: 230px;
+  padding: 22px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #ffffff;
-  box-shadow: 0 14px 30px rgba(20, 33, 47, 0.05);
+  box-shadow: 0 12px 28px rgba(20, 33, 47, 0.05);
 }
 
 .proof-card span {
   display: inline-flex;
-  min-height: 28px;
+  min-height: 26px;
   align-items: center;
   padding: 0 10px;
   border-radius: 999px;
   background: rgba(18, 108, 122, 0.1);
   color: var(--brand);
-  font-size: 0.75rem;
+  font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .proof-card h3 {
-  margin-top: 22px;
+  margin-top: 18px;
 }
 
 .proof-card p {
@@ -625,8 +629,8 @@ h3 {
 }
 
 .assessment-intro {
-  max-width: 780px;
-  margin-bottom: 30px;
+  max-width: 700px;
+  margin-bottom: 24px;
 }
 
 .form-shell {
@@ -643,7 +647,7 @@ h3 {
 }
 
 .site-footer {
-  padding: 44px 24px 28px;
+  padding: 38px 24px 24px;
   background: var(--ink);
   color: #d9e2e8;
 }
@@ -651,7 +655,7 @@ h3 {
 .footer-grid {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 32px;
+  gap: 26px;
   align-items: start;
 }
 
@@ -668,7 +672,8 @@ h3 {
 .footer-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
+  gap: 14px;
+  font-size: 0.9rem;
   color: #d9e2e8;
   font-weight: 700;
 }
@@ -730,7 +735,7 @@ h3 {
   }
 
   .hero {
-    padding-top: 58px;
+    padding-top: 50px;
   }
 
   .offerings-grid,
@@ -743,7 +748,7 @@ h3 {
 
 @media (max-width: 640px) {
   .site-header {
-    gap: 14px;
+    gap: 12px;
     padding: 14px 18px;
   }
 
@@ -752,12 +757,12 @@ h3 {
   }
 
   .site-nav {
-    gap: 16px;
-    font-size: 0.88rem;
+    gap: 14px;
+    font-size: 0.82rem;
   }
 
   .section-band {
-    padding: 68px 18px;
+    padding: 54px 18px;
   }
 
   .hero-actions,
@@ -766,13 +771,13 @@ h3 {
   }
 
   .hero-grid {
-    gap: 36px;
+    gap: 30px;
   }
 
   .architecture-flow,
   .offering-card,
   .why-panel {
-    padding: 20px;
+    padding: 18px;
   }
 
   .offerings-grid,
