@@ -215,8 +215,7 @@ h3 {
 }
 
 .hero-proof span,
-.card-kicker,
-.inline-link {
+.card-kicker {
   display: inline-flex;
   align-items: center;
   min-height: 30px;
@@ -227,14 +226,6 @@ h3 {
   color: var(--muted);
   font-size: 0.82rem;
   font-weight: 700;
-}
-
-.inline-link {
-  min-height: 38px;
-  margin-top: 8px;
-  color: var(--brand-dark);
-  border-color: rgba(18, 108, 122, 0.22);
-  background: rgba(18, 108, 122, 0.08);
 }
 
 .architecture-card {
@@ -304,8 +295,7 @@ h3 {
 .node-label,
 .signal-grid span,
 .trust-grid span,
-.capability-list span,
-.capability-card span {
+.capability-list span {
   display: block;
   color: var(--muted);
   font-size: 0.77rem;
@@ -428,40 +418,6 @@ h3 {
   background: var(--brand);
 }
 
-.service-tracks {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1px;
-  margin-top: 28px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--line);
-}
-
-.service-tracks div {
-  min-height: 148px;
-  padding: 22px;
-  background: #ffffff;
-}
-
-.service-tracks span {
-  display: block;
-  margin-bottom: 10px;
-  color: var(--brand);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.service-tracks strong {
-  display: block;
-  color: var(--ink);
-  font-size: 1rem;
-  line-height: 1.45;
-}
-
 .platform-section {
   background: var(--surface-soft);
 }
@@ -544,164 +500,6 @@ h3 {
 
 .accelerator-notes p {
   margin: 10px 0 0;
-  color: var(--muted);
-}
-
-.roadmap-section {
-  background: var(--surface-soft);
-}
-
-.roadmap-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.roadmap-card {
-  min-height: 300px;
-  padding: 26px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #ffffff;
-  box-shadow: 0 14px 30px rgba(20, 33, 47, 0.05);
-}
-
-.roadmap-card span,
-.timeline span {
-  display: inline-flex;
-  min-height: 28px;
-  align-items: center;
-  padding: 0 10px;
-  border-radius: 999px;
-  background: rgba(18, 108, 122, 0.1);
-  color: var(--brand);
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.roadmap-card h3 {
-  margin-top: 22px;
-}
-
-.roadmap-card p {
-  margin-bottom: 0;
-  color: var(--muted);
-}
-
-.timeline {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1px;
-  margin-top: 24px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--line);
-}
-
-.timeline div {
-  min-height: 150px;
-  padding: 22px;
-  background: #ffffff;
-}
-
-.timeline strong {
-  display: block;
-  margin-top: 14px;
-  line-height: 1.4;
-}
-
-.blueprint-section {
-  background: var(--ink);
-  color: #ffffff;
-}
-
-.blueprint-section h2,
-.blueprint-section .section-heading p:not(.eyebrow) {
-  color: #ffffff;
-}
-
-.blueprint-section .section-heading p:not(.eyebrow) {
-  color: #b8c6ce;
-}
-
-.blueprint-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 0.68fr) minmax(0, 1fr);
-  gap: 42px;
-  align-items: start;
-}
-
-.blueprint-map {
-  display: grid;
-  gap: 12px;
-}
-
-.blueprint-lane {
-  display: grid;
-  grid-template-columns: minmax(120px, 0.65fr) repeat(3, minmax(0, 1fr));
-  gap: 1px;
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.14);
-}
-
-.blueprint-lane span,
-.blueprint-lane strong {
-  display: flex;
-  align-items: center;
-  min-height: 62px;
-  padding: 14px;
-  background: rgba(255, 255, 255, 0.07);
-  line-height: 1.25;
-}
-
-.blueprint-lane span {
-  color: #8fb4bd;
-  font-size: 0.77rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.blueprint-lane strong {
-  color: #ffffff;
-  font-size: 0.95rem;
-}
-
-.capabilities-section {
-  background: #ffffff;
-}
-
-.capabilities-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.capability-card {
-  min-height: 250px;
-  padding: 26px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background:
-    linear-gradient(180deg, rgba(238, 244, 248, 0.68), rgba(255, 255, 255, 0) 48%),
-    #ffffff;
-}
-
-.capability-card span {
-  color: var(--brand);
-}
-
-.capability-card h3 {
-  margin-top: 28px;
-}
-
-.capability-card p {
-  margin-bottom: 0;
   color: var(--muted);
 }
 
@@ -822,48 +620,6 @@ h3 {
   color: var(--muted);
 }
 
-.insights-section {
-  background: #ffffff;
-}
-
-.insights-grid {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.insight-card {
-  min-height: 260px;
-  padding: 24px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #ffffff;
-  box-shadow: 0 14px 30px rgba(20, 33, 47, 0.05);
-}
-
-.insight-card span {
-  display: inline-flex;
-  min-height: 28px;
-  align-items: center;
-  padding: 0 10px;
-  border-radius: 999px;
-  background: rgba(217, 119, 6, 0.11);
-  color: #9a4f03;
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.insight-card h3 {
-  margin-top: 22px;
-}
-
-.insight-card p {
-  margin-bottom: 0;
-  color: var(--muted);
-}
-
 .assessment-section {
   background: #ffffff;
 }
@@ -968,7 +724,6 @@ h3 {
 
   .hero-grid,
   .accelerator-layout,
-  .blueprint-grid,
   .platform-grid,
   .why-panel {
     grid-template-columns: 1fr;
@@ -979,12 +734,7 @@ h3 {
   }
 
   .offerings-grid,
-  .service-tracks,
-  .roadmap-grid,
-  .timeline,
-  .capabilities-grid,
   .proof-grid,
-  .insights-grid,
   .trust-grid,
   .why-metrics {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1026,12 +776,7 @@ h3 {
   }
 
   .offerings-grid,
-  .service-tracks,
-  .roadmap-grid,
-  .timeline,
-  .capabilities-grid,
   .proof-grid,
-  .insights-grid,
   .trust-grid,
   .why-metrics,
   .signal-grid {
@@ -1040,10 +785,6 @@ h3 {
 
   .offering-card {
     min-height: auto;
-  }
-
-  .blueprint-lane {
-    grid-template-columns: 1fr;
   }
 
   .footer-grid,
