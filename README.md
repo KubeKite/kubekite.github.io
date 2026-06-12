@@ -1,19 +1,14 @@
 # KubeKite - Kubernetes & AI Platform Engineering
 
-Static website for KubeKite, positioned around secure AI-ready cloud platforms on AWS and Kubernetes with EKS, Backstage, GitOps, Argo CD, Terraform/Crossplane/Kratix provisioning, Vault/IAM/SSO, chatbot infrastructure, MCP, RAG, Ray, GPU workload optimization, operational runbooks, AI SRE workflows, observability, and cost optimization.
+Static website for KubeKite, positioned around production-grade Kubernetes and AI platforms on AWS with EKS, GitOps, Backstage, Argo CD, Vault/IAM, RAG, Ray, observability, and cost optimization.
 
 ## Features
 
 - Single-page consulting homepage
 - Productized service offering sections
-- AI-powered platform engineering accelerator section
-- KubeKite v1 plugin roadmap section
-- Specialized service tracks for EKS, GitOps, DevSecOps, chatbot/MCP/RAG infrastructure, Ray workloads, platform engineering, and cost optimization
-- Platform blueprint section
-- AI platform capabilities section
+- Platform accelerator section
 - Founder-led credibility section
-- Proof section for architecture diagrams, case studies, implementation examples, technical posts, and GitHub repos
-- Technical content roadmap section
+- Proof section for architecture diagrams, case studies, and implementation examples
 - Architecture-style platform visual
 - Smooth anchor navigation
 - Lightweight reveal-on-scroll interaction
@@ -33,13 +28,9 @@ Static website for KubeKite, positioned around secure AI-ready cloud platforms o
 - Platform trust strip
 - Productized offerings
 - Platform accelerator
-- KubeKite v1 roadmap
-- Platform blueprint
-- AI platform capabilities
 - Why KubeKite differentiation
 - Founder-led credibility
 - Proof and specificity assets
-- Technical content roadmap
 - Assessment request form
 - Footer
 
