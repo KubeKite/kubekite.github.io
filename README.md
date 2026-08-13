@@ -1,19 +1,23 @@
-# KubeKite - Kubernetes & AI Platform Engineering
+# KubeKite
 
-Static website for KubeKite, positioned around production-grade Kubernetes and AI platforms on AWS with EKS, GitOps, Backstage, Argo CD, Vault/IAM, RAG, Ray, observability, and cost optimization.
+Static website for KubeKite, an engineering-focused company and content brand for Cloud, DevOps, Platform Engineering and AI Infrastructure.
+
+Core message:
+
+> We build and explain modern infrastructure for software and AI.
 
 ## Features
 
-- Single-page consulting homepage
-- Productized service offering sections
-- Platform accelerator section
-- Founder-led credibility section
-- Proof section for architecture diagrams, case studies, and implementation examples
-- Architecture-style platform visual
-- Smooth anchor navigation
-- Lightweight reveal-on-scroll interaction
-- Embedded Google Form for AI platform assessment requests
-- Responsive layout for mobile, tablet, and desktop
+- Static GitHub Pages-compatible homepage
+- Simple navigation: Home, Insights, Services, About and Contact
+- Engineering-focused hero and capability sections
+- First-class Insights section for Engineering Notes, KubeKite Explains and KubeKite Weekly
+- Services preview for Cloud, Kubernetes, Platform Engineering, AI/GPU Infrastructure and modernization
+- Founder-led About preview
+- Newsletter placeholder for KubeKite Weekly
+- Existing embedded Google Form contact mechanism
+- Lightweight vanilla JavaScript for smooth scrolling and reveal-on-scroll
+- Responsive enterprise-modern layout
 
 ## Technologies Used
 
@@ -22,24 +26,16 @@ Static website for KubeKite, positioned around production-grade Kubernetes and A
 - Vanilla JavaScript
 - Google Forms integration
 
-## Sections
-
-- Hero and assessment CTA
-- Platform trust strip
-- Productized offerings
-- Platform accelerator
-- Why KubeKite differentiation
-- Founder-led credibility
-- Proof and specificity assets
-- Assessment request form
-- Footer
-
 ## Local Development
 
 Open `index.html` in a browser. The site is static and does not require a build step.
+
+## Deployment
+
+The site is designed for GitHub Pages and preserves the existing `CNAME` configuration for `kubekite.com`.
 
 ## License
 
 MIT License
 
-Copyright (c) 2026 KubeKite
+Copyright (c) 2026 KubeKite Technologies
