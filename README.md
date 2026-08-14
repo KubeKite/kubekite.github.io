@@ -4,7 +4,7 @@ Static website for KubeKite, an education-first engineering content brand for Cl
 
 Core message:
 
-> Practical infrastructure notes for engineers.
+> Understand modern computing infrastructure.
 
 ## Features
 

@@ -181,10 +181,10 @@ p {
 }
 
 h1 {
-  max-width: 680px;
+  max-width: 620px;
   margin-bottom: 16px;
-  font-size: clamp(2.45rem, 5vw, 4.35rem);
-  line-height: 1.02;
+  font-size: clamp(2.15rem, 4.4vw, 3.65rem);
+  line-height: 1.06;
   letter-spacing: 0;
 }
 
