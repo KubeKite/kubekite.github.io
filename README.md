@@ -1,21 +1,21 @@
 # KubeKite
 
-Static website for KubeKite, an engineering-focused company and content brand for Cloud, DevOps, Platform Engineering and AI Infrastructure.
+Static website for KubeKite, an education-first engineering content brand for Cloud, DevOps, Platform Engineering and AI Infrastructure.
 
 Core message:
 
-> We build and explain modern infrastructure for software and AI.
+> Practical infrastructure notes for engineers.
 
 ## Features
 
 - Static GitHub Pages-compatible homepage
-- Simple navigation: Home, Insights, Services, About and Contact
-- Engineering-focused hero and capability sections
+- Simple navigation: Home, Insights, About and Contact
+- Education-focused hero and content model
 - First-class Insights section for Engineering Notes, KubeKite Explains and KubeKite Weekly
-- Services preview for Cloud, Kubernetes, Platform Engineering, AI/GPU Infrastructure and modernization
+- Compact secondary services section for selective infrastructure help
 - Founder-led About preview
 - Newsletter placeholder for KubeKite Weekly
-- Existing embedded Google Form contact mechanism
+- Existing Google Form contact mechanism
 - Lightweight vanilla JavaScript for smooth scrolling and reveal-on-scroll
 - Responsive enterprise-modern layout
 
@@ -24,7 +24,7 @@ Core message:
 - HTML5
 - CSS3
 - Vanilla JavaScript
-- Google Forms integration
+- Google Forms contact link
 
 ## Local Development
 

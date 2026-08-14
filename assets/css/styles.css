@@ -225,7 +225,7 @@ h3 {
 
 .system-panel,
 .newsletter-panel,
-.form-shell {
+.contact-card {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: #ffffff;
@@ -416,7 +416,7 @@ h3 {
 }
 
 .service-card {
-  min-height: 190px;
+  min-height: 160px;
   background: #ffffff;
 }
 
@@ -492,9 +492,17 @@ h3 {
   color: var(--muted);
 }
 
-.form-shell iframe {
-  display: block;
-  border: 0;
+.contact-card {
+  max-width: 680px;
+  padding: 24px;
+}
+
+.contact-card p {
+  max-width: 560px;
+}
+
+.contact-card .button {
+  margin-top: 4px;
 }
 
 .site-footer {
