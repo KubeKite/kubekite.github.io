@@ -9,14 +9,13 @@
   <link rel="preload" href="assets/css/styles.css" as="style">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script>
-    // Runs before first paint so the saved theme does not flash the wrong colours.
+    // Dark is the default. Runs before first paint so a stored light choice does not flash dark.
     (function () {
       try {
         var stored = localStorage.getItem("kubekite-theme");
-        var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        document.documentElement.setAttribute("data-theme", stored || (prefersDark ? "dark" : "light"));
+        document.documentElement.setAttribute("data-theme", stored === "light" ? "light" : "dark");
       } catch (error) {
-        document.documentElement.setAttribute("data-theme", "light");
+        document.documentElement.setAttribute("data-theme", "dark");
       }
     })();
   </script>
@@ -31,8 +30,8 @@
     <nav class="site-nav" aria-label="Primary navigation">
       <a href="#home">Home</a>
       <a href="#topics">Topics</a>
-      <a href="#insights">Insights</a>
-      <a href="#latest">Latest</a>
+      <a href="#trends">Trends</a>
+      <a href="#repos">Repos</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -67,12 +66,12 @@
             Engineering, MLOps, Cloud Computing, AI Infrastructure and Platform Engineering.
           </p>
           <p class="hero-note">
-            Everything here is written to teach: engineering notes, plain-language explainers, weekly news with
-            context and open-source examples you can read, run and reuse.
+            Three things, all free: explainers on how the pieces work, a weekly read on what is moving across the
+            software and computing landscape, and open-source repos that make the daily work easier.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#topics">Explore Topics</a>
-            <a class="button secondary" href="#newsletter">Subscribe</a>
+            <a class="button secondary" href="#repos">Browse Repos</a>
           </div>
         </div>
 
@@ -207,135 +206,93 @@
       </div>
     </section>
 
-    <section id="insights" class="section-band soft-section">
+    <section id="trends" class="section-band soft-section">
       <div class="section-inner">
         <div class="section-heading reveal">
-          <p class="eyebrow">Insights</p>
-          <h2>How the knowledge is published</h2>
+          <p class="eyebrow">Trends</p>
+          <h2>What is moving across the landscape</h2>
           <p>
-            Four formats, all education-first, for engineers who want less noise and more practical infrastructure judgment.
+            A weekly read on software and computing: what shipped, what broke, what teams are adopting and what
+            is quietly being abandoned. Signal and context, not press releases.
           </p>
         </div>
 
         <div class="capability-grid">
           <article class="capability-card reveal">
-            <span>KubeKite Engineering Notes</span>
-            <h3>Real infrastructure lessons</h3>
-            <p>EKS upgrades, Terraform patterns, GitOps, SLO design, incidents, migrations and operational tradeoffs.</p>
+            <span>Platforms &amp; Infrastructure</span>
+            <h3>How systems get built and run</h3>
+            <p>Cloud services, Kubernetes, delivery tooling and the operational shifts behind them.</p>
           </article>
           <article class="capability-card reveal">
-            <span>KubeKite Explains</span>
-            <h3>Clear technical explainers</h3>
-            <p>Kubernetes, cloud services, reliability practice, MLOps pipelines, GPUs, Ray, CI/CD and developer tooling.</p>
+            <span>AI &amp; Model Infrastructure</span>
+            <h3>The stack underneath the models</h3>
+            <p>GPUs, inference serving, agent tooling and what running AI workloads actually costs.</p>
           </article>
           <article class="capability-card reveal">
-            <span>KubeKite Weekly</span>
-            <h3>News with engineering context</h3>
-            <p>Cloud, DevOps, SRE, security, platform engineering and AI infrastructure updates without generic noise.</p>
+            <span>Developer Experience</span>
+            <h3>What teams actually adopt</h3>
+            <p>Editors, CI, code review and automation — the tools that change how engineers spend a day.</p>
           </article>
           <article class="capability-card reveal">
-            <span>Open Source</span>
-            <h3>Repos that teach by example</h3>
-            <p>Small templates, diagrams, reference architectures and starter kits you can read end to end.</p>
+            <span>Industry Signals</span>
+            <h3>Launches, deprecations, direction</h3>
+            <p>Notable releases and end-of-life notices, read for what they mean for the work ahead.</p>
           </article>
+        </div>
+
+        <div class="section-footnote reveal">
+          <p>Published weekly on LinkedIn, with the highlights collected in KubeKite Weekly.</p>
+          <a class="button secondary" href="https://www.linkedin.com/company/kubekite/" rel="noopener">Follow on LinkedIn</a>
         </div>
       </div>
     </section>
 
-    <section id="latest" class="section-band">
+    <section id="repos" class="section-band">
       <div class="section-inner">
         <div class="section-heading reveal">
-          <p class="eyebrow">Latest</p>
-          <h2>Start here</h2>
+          <p class="eyebrow">Repos</p>
+          <h2>Smart work, packaged up</h2>
           <p>
-            Initial content tracks across the six topics. These are placeholders until the first real posts and repos are published.
+            Open-source repos aimed at the everyday grind — setups and templates that make engineers faster,
+            especially when working alongside AI tooling. Free to clone, read and adapt.
           </p>
         </div>
 
-        <div class="article-grid">
-          <article class="article-card reveal">
-            <div class="article-meta">
-              <span>DevOps</span>
-              <time datetime="2026-08-12">Aug 12, 2026</time>
-            </div>
-            <h3>EKS upgrade lessons to document early</h3>
-            <p>Turn upgrade work into reusable notes instead of losing hard-earned platform knowledge after every migration.</p>
-            <a href="#newsletter" aria-label="Read EKS upgrade lessons placeholder">5 min read</a>
+        <div class="capability-grid">
+          <article class="capability-card reveal">
+            <span>Claude Code Hooks</span>
+            <h3>Automate the repetitive parts</h3>
+            <p>Hooks that run checks, formatting and guardrails automatically instead of relying on memory.</p>
           </article>
-          <article class="article-card reveal">
-            <div class="article-meta">
-              <span>SRE</span>
-              <time datetime="2026-08-12">Aug 12, 2026</time>
-            </div>
-            <h3>Writing an SLO your team will actually defend</h3>
-            <p>Choosing indicators that reflect user pain, and using the error budget as a decision tool rather than a report.</p>
-            <a href="#newsletter" aria-label="Read SLO design placeholder">6 min read</a>
+          <article class="capability-card reveal">
+            <span>Skills &amp; Agents</span>
+            <h3>Task-shaped helpers</h3>
+            <p>Reusable skills and agent definitions for reviews, migrations and repeatable engineering work.</p>
           </article>
-          <article class="article-card reveal">
-            <div class="article-meta">
-              <span>MLOps</span>
-              <time datetime="2026-08-12">Aug 12, 2026</time>
-            </div>
-            <h3>What breaks between training and serving</h3>
-            <p>Feature skew, versioning gaps and the handoffs that quietly turn a good model into a bad prediction.</p>
-            <a href="#newsletter" aria-label="Read training to serving placeholder">6 min read</a>
+          <article class="capability-card reveal">
+            <span>Context &amp; Memory Files</span>
+            <h3>Give the tools real context</h3>
+            <p>Markdown context, project memory and conventions that make AI assistants useful on real codebases.</p>
           </article>
-          <article class="article-card reveal">
-            <div class="article-meta">
-              <span>Cloud Computing</span>
-              <time datetime="2026-08-12">Aug 12, 2026</time>
-            </div>
-            <h3>Landing zones without the enterprise jargon</h3>
-            <p>Why multi-account structure exists, what problem it solves and how much of it a small team really needs.</p>
-            <a href="#newsletter" aria-label="Read landing zones placeholder">5 min read</a>
+          <article class="capability-card reveal">
+            <span>Starter Kits</span>
+            <h3>Reference setups worth copying</h3>
+            <p>Small reference architectures and templates that show a working setup end to end.</p>
           </article>
-          <article class="article-card reveal">
-            <div class="article-meta">
-              <span>AI Infrastructure</span>
-              <time datetime="2026-08-12">Aug 12, 2026</time>
-            </div>
-            <h3>Kubernetes plus GPUs, explained simply</h3>
-            <p>GPU scheduling, runtime isolation, workload placement and observability explained for infrastructure engineers.</p>
-            <a href="#newsletter" aria-label="Read Kubernetes plus GPUs placeholder">6 min read</a>
-          </article>
-          <article class="article-card reveal">
-            <div class="article-meta">
-              <span>Platform Engineering</span>
-              <time datetime="2026-08-12">Aug 12, 2026</time>
-            </div>
-            <h3>Golden paths that developers choose willingly</h3>
-            <p>What makes a paved road adopted instead of bypassed, and how platform teams measure whether it worked.</p>
-            <a href="#newsletter" aria-label="Read golden paths placeholder">5 min read</a>
-          </article>
+        </div>
+
+        <div class="contact-card repo-panel reveal">
+          <h3>Available now</h3>
+          <p>
+            <a href="https://github.com/KubeKite/workflow-builder" rel="noopener">workflow-builder</a> — a workflow
+            automation platform. More repos land here as they are published.
+          </p>
+          <a class="button primary" href="https://github.com/KubeKite" rel="noopener">Browse the GitHub org</a>
         </div>
       </div>
     </section>
 
-    <section id="why" class="section-band soft-section">
-      <div class="section-inner split-layout">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Why KubeKite</p>
-          <h2>Knowledge first. Services second.</h2>
-        </div>
-        <div class="text-stack reveal">
-          <p>
-            KubeKite exists to explain modern infrastructure. Almost all of the work here is publishing:
-            engineering notes, explainers, weekly news context, diagrams and open-source examples across
-            DevOps, SRE, MLOps, Cloud, AI Infrastructure and Platform Engineering.
-          </p>
-          <p>
-            That is deliberate. Free, careful, specific writing is how engineers learn and how trust gets built —
-            so the knowledge base leads and stays open to everyone.
-          </p>
-          <p>
-            Services stay deliberately small: a selective practice for teams that want direct help after
-            reading the work. They fund the writing; they never shape it.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section-band">
+    <section id="about" class="section-band soft-section">
       <div class="section-inner split-layout">
         <div class="section-heading reveal">
           <p class="eyebrow">About</p>
@@ -373,26 +330,12 @@
       </div>
     </section>
 
-    <section id="services" class="services-strip" aria-label="Selective services">
-      <div class="section-inner services-bar reveal">
-        <div class="services-copy">
-          <p class="eyebrow">Services</p>
-          <h3>Selective infrastructure help, when a team needs it directly.</h3>
-          <p>
-            A small advisory practice alongside the writing: cloud and Kubernetes review, reliability and SLO
-            practice, platform engineering, and infrastructure for AI workloads.
-          </p>
-        </div>
-        <a class="button secondary" href="#contact">Enquire</a>
-      </div>
-    </section>
-
     <section id="contact" class="section-band contact-section">
       <div class="section-inner">
         <div class="contact-intro reveal">
           <p class="eyebrow">Contact</p>
           <h2>Follow, read or collaborate.</h2>
-          <p>KubeKite is focused on education and open-source traction. Reach out about the content, the repos, or selective infrastructure help.</p>
+          <p>KubeKite is focused on education and open-source work. Reach out about the writing, the repos, or a trend worth covering.</p>
         </div>
         <div class="contact-topics reveal" aria-label="Contact topics">
           <span>DevOps</span>
@@ -405,7 +348,7 @@
         <div class="contact-card reveal">
           <h3>Have a question, correction or topic request?</h3>
           <p>
-            Use the existing KubeKite form for content ideas, repo feedback, corrections, collaboration or selective platform help.
+            Use the existing KubeKite form for content ideas, repo feedback, corrections or collaboration.
           </p>
           <a class="button primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfk7C1w_3CgMhnOai2XXtlCQxVvNY1yoG_O5oz7WT14YGK70g/viewform" rel="noopener">
             Contact KubeKite
@@ -426,7 +369,8 @@
       </div>
       <div class="footer-links" aria-label="Footer links">
         <a href="#topics">Topics</a>
-        <a href="#insights">Insights</a>
+        <a href="#trends">Trends</a>
+        <a href="#repos">Repos</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
         <a href="https://www.linkedin.com/company/kubekite/" rel="noopener">LinkedIn</a>

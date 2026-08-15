@@ -9,15 +9,17 @@ Core message:
 
 ## Content model
 
-The site is deliberately weighted toward knowledge, with services kept small:
+The site publishes three things, all free:
 
-- **Knowledge** — a topic-led knowledge base covering the six disciplines, plus engineering notes,
-  explainers, weekly news context and open-source examples. This is nearly all of the page.
-- **Services** — a single compact band offering selective infrastructure help for teams that want
-  direct support after reading the work.
+- **Knowledge** (`#topics`) — a topic-led base covering the six disciplines in depth.
+- **Trends** (`#trends`) — a weekly read on what is moving across the software and computing
+  landscape, published to LinkedIn and collected in KubeKite Weekly.
+- **Repos** (`#repos`) — open-source work that makes engineers faster: Claude Code hooks, skills and
+  agents, context and memory files, and starter kits.
 
-Keep this balance when adding sections: the site is a front door to the writing, the GitHub repos
-and the newsletter, not a services pitch.
+The site is a front door to the writing, the GitHub repos and the newsletter. Keep it small: prefer
+merging or removing sections over adding them, and do not ship placeholder content with invented
+dates or links that go nowhere. There is deliberately no services section — that comes later.
 
 ## Knowledge areas
 
@@ -33,12 +35,14 @@ Each area has its own card in the `#topics` section with the subtopics it covers
 ## Features
 
 - Static GitHub Pages-compatible homepage
-- Navigation: Home, Topics, Insights, Latest, About and Contact
+- Navigation: Home, Topics, Trends, Repos, About and Contact
+- **Dark theme by default**, with light as an explicit opt-in via the header toggle. The choice is
+  stored in `localStorage` under `kubekite-theme` and applied by an inline pre-paint script so it
+  does not flash. Colours are CSS custom properties: dark values live on `:root`, light values on
+  `:root[data-theme="light"]` — add new colours as tokens in both blocks, never as literals.
 - Topic-led knowledge base as the primary section
-- Insights section describing the publishing formats: Engineering Notes, KubeKite Explains,
-  KubeKite Weekly and open source
-- Latest section with one starter post per knowledge area
-- Compact single-band services strip
+- Trends section covering the wider software and computing landscape
+- Repos section for open-source work, linking the GitHub org
 - Founder-led About preview
 - Newsletter placeholder for KubeKite Weekly
 - Existing Google Form contact mechanism

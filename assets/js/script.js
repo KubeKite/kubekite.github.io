@@ -3,8 +3,9 @@ document.documentElement.classList.add("js");
 const THEME_KEY = "kubekite-theme";
 const themeToggle = document.querySelector("#theme-toggle");
 
+// Dark is the default, so anything other than an explicit "light" counts as dark.
 const currentTheme = () =>
-  document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
+  document.documentElement.getAttribute("data-theme") === "light" ? "light" : "dark";
 
 const applyTheme = (theme) => {
   document.documentElement.setAttribute("data-theme", theme);
@@ -29,22 +30,6 @@ if (themeToggle) {
       localStorage.setItem(THEME_KEY, nextTheme);
     } catch (error) {
       // Storage can be unavailable in private mode; the toggle still works for this visit.
-    }
-  });
-}
-
-if (window.matchMedia) {
-  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (event) => {
-    let stored = null;
-
-    try {
-      stored = localStorage.getItem(THEME_KEY);
-    } catch (error) {
-      stored = null;
-    }
-
-    if (!stored) {
-      applyTheme(event.matches ? "dark" : "light");
     }
   });
 }
