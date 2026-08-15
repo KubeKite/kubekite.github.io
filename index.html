@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KubeKite | Learn DevOps, SRE, MLOps, Cloud & AI Infrastructure</title>
-  <meta name="description" content="KubeKite is a knowledge source for DevOps, SRE, MLOps, Cloud Computing, AI Infrastructure and Platform Engineering — practical notes, explainers and weekly updates for engineers.">
-  <meta name="keywords" content="KubeKite, DevOps, SRE, site reliability engineering, MLOps, cloud computing, AI infrastructure, platform engineering, Kubernetes, EKS, GitOps, ArgoCD, Terraform, Ray, vLLM, GPU infrastructure, observability, SLO">
+  <title>KubeKite | Work Smarter in the AI Era</title>
+  <meta name="description" content="KubeKite tracks weekly trends across software and computing, publishes open-source repos and Claude tooling that make engineers faster, and follows the industries AI is reshaping.">
+  <meta name="keywords" content="KubeKite, AI era, software trends, Claude Code hooks, AI agents, skills, context engineering, developer productivity, open source, AI industries, healthcare AI, fintech AI, legal tech, robotics, energy AI, defense tech">
   <link rel="preload" href="assets/css/styles.css" as="style">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script>
@@ -29,9 +29,9 @@
     </a>
     <nav class="site-nav" aria-label="Primary navigation">
       <a href="#home">Home</a>
-      <a href="#topics">Topics</a>
       <a href="#trends">Trends</a>
       <a href="#repos">Repos</a>
+      <a href="#industries">Industries</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -59,18 +59,18 @@
     <section class="hero section-band">
       <div class="section-inner hero-grid">
         <div class="hero-copy reveal">
-          <p class="eyebrow">DevOps • SRE • MLOps • Cloud • AI Infrastructure • Platform Engineering</p>
-          <h1>Learn Modern Computing Infrastructure.</h1>
+          <p class="eyebrow">Trends • AI Tooling • Industry Domains</p>
+          <h1>Work smarter in the AI era.</h1>
           <p class="hero-lede">
-            KubeKite is a knowledge source for the six disciplines that run modern systems: DevOps, Site Reliability
-            Engineering, MLOps, Cloud Computing, AI Infrastructure and Platform Engineering.
+            KubeKite tracks what is changing across software and computing, packages the tooling that makes
+            engineers faster, and follows the industries AI is reshaping.
           </p>
           <p class="hero-note">
-            Three things, all free: explainers on how the pieces work, a weekly read on what is moving across the
-            software and computing landscape, and open-source repos that make the daily work easier.
+            All of it free: a weekly read on the landscape, open-source repos you can clone today, and notes on
+            where the work is heading next.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#topics">Explore Topics</a>
+            <a class="button primary" href="#trends">Read the Trends</a>
             <a class="button secondary" href="#repos">Browse Repos</a>
           </div>
         </div>
@@ -82,131 +82,35 @@
           </div>
           <div class="system-flow">
             <div>
-              <span>Concept</span>
-              <strong>What the technology actually does, in plain language</strong>
+              <span>Signal</span>
+              <strong>What actually changed, stripped of the announcement noise</strong>
             </div>
             <div>
               <span>Context</span>
-              <strong>Where it fits, what it replaces and when it is the wrong choice</strong>
+              <strong>Why it matters and which work it affects first</strong>
             </div>
             <div>
               <span>Practice</span>
-              <strong>Configuration, failure modes and operational tradeoffs</strong>
+              <strong>What is worth trying, adopting or ignoring</strong>
             </div>
             <div class="accent">
               <span>Reference</span>
-              <strong>Diagrams, examples and open-source repos to take away</strong>
+              <strong>Repos, examples and templates to take away</strong>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="focus-strip" aria-label="KubeKite knowledge areas">
+    <section class="focus-strip" aria-label="What KubeKite publishes">
       <div class="section-inner focus-grid">
-        <span>DevOps</span>
-        <span>Site Reliability Engineering</span>
-        <span>MLOps</span>
-        <span>Cloud Computing</span>
-        <span>AI Infrastructure</span>
-        <span>Platform Engineering</span>
+        <span>Weekly Trends</span>
+        <span>AI-Era Toolkit</span>
+        <span>Industry Domains</span>
       </div>
     </section>
 
-    <section id="topics" class="section-band">
-      <div class="section-inner">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Knowledge Base</p>
-          <h2>Six disciplines, covered in depth.</h2>
-          <p>
-            Each area is treated as a subject to learn rather than a service to sell. Start anywhere — the topics
-            connect, and the notes assume you want to understand the system, not just copy a command.
-          </p>
-        </div>
-
-        <div class="topic-grid">
-          <article class="topic-card reveal">
-            <span>01 — DevOps</span>
-            <h3>Ship changes safely and repeatedly</h3>
-            <p>The delivery path from commit to production, and the automation that keeps it boring.</p>
-            <ul class="topic-tags">
-              <li>CI/CD pipelines</li>
-              <li>GitOps &amp; Argo CD</li>
-              <li>Terraform &amp; IaC</li>
-              <li>Release strategies</li>
-              <li>Supply chain basics</li>
-            </ul>
-          </article>
-
-          <article class="topic-card reveal">
-            <span>02 — Site Reliability Engineering</span>
-            <h3>Make reliability measurable</h3>
-            <p>How mature teams define "good enough", detect failure early and learn from every incident.</p>
-            <ul class="topic-tags">
-              <li>SLIs, SLOs &amp; error budgets</li>
-              <li>Observability</li>
-              <li>Incident response</li>
-              <li>Postmortems</li>
-              <li>Capacity planning</li>
-            </ul>
-          </article>
-
-          <article class="topic-card reveal">
-            <span>03 — MLOps</span>
-            <h3>Move models from notebook to production</h3>
-            <p>The lifecycle around a model: data in, model out, and everything that keeps it honest afterwards.</p>
-            <ul class="topic-tags">
-              <li>Training pipelines</li>
-              <li>Feature stores</li>
-              <li>Model registries</li>
-              <li>Serving &amp; rollout</li>
-              <li>Drift monitoring</li>
-            </ul>
-          </article>
-
-          <article class="topic-card reveal">
-            <span>04 — Cloud Computing</span>
-            <h3>Understand the platform underneath</h3>
-            <p>Core cloud building blocks explained well enough that provider documentation starts making sense.</p>
-            <ul class="topic-tags">
-              <li>Compute &amp; storage choices</li>
-              <li>Networking &amp; VPC design</li>
-              <li>IAM &amp; identity</li>
-              <li>Multi-account landing zones</li>
-              <li>Cost awareness</li>
-            </ul>
-          </article>
-
-          <article class="topic-card reveal">
-            <span>05 — AI Infrastructure</span>
-            <h3>Run AI workloads without guesswork</h3>
-            <p>What actually changes when GPUs, large models and inference traffic enter your infrastructure.</p>
-            <ul class="topic-tags">
-              <li>GPU scheduling on Kubernetes</li>
-              <li>Inference serving &amp; vLLM</li>
-              <li>Distributed training &amp; Ray</li>
-              <li>Accelerator networking</li>
-              <li>Performance vs cost</li>
-            </ul>
-          </article>
-
-          <article class="topic-card reveal">
-            <span>06 — Platform Engineering</span>
-            <h3>Build the paved road for developers</h3>
-            <p>Turning scattered infrastructure into a product other engineers can use without asking for help.</p>
-            <ul class="topic-tags">
-              <li>Internal developer platforms</li>
-              <li>Golden paths</li>
-              <li>Self-service workflows</li>
-              <li>Platform APIs</li>
-              <li>Developer experience</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="trends" class="section-band soft-section">
+    <section id="trends" class="section-band">
       <div class="section-inner">
         <div class="section-heading reveal">
           <p class="eyebrow">Trends</p>
@@ -219,24 +123,24 @@
 
         <div class="capability-grid">
           <article class="capability-card reveal">
+            <span>Tools &amp; Models</span>
+            <h3>What launched and what it changes</h3>
+            <p>New models, frameworks and developer tools, judged on what they actually make possible.</p>
+          </article>
+          <article class="capability-card reveal">
+            <span>Ways of Working</span>
+            <h3>How engineering is shifting</h3>
+            <p>Agents, code review, testing and the workflows teams are rebuilding around AI.</p>
+          </article>
+          <article class="capability-card reveal">
             <span>Platforms &amp; Infrastructure</span>
-            <h3>How systems get built and run</h3>
-            <p>Cloud services, Kubernetes, delivery tooling and the operational shifts behind them.</p>
-          </article>
-          <article class="capability-card reveal">
-            <span>AI &amp; Model Infrastructure</span>
-            <h3>The stack underneath the models</h3>
-            <p>GPUs, inference serving, agent tooling and what running AI workloads actually costs.</p>
-          </article>
-          <article class="capability-card reveal">
-            <span>Developer Experience</span>
-            <h3>What teams actually adopt</h3>
-            <p>Editors, CI, code review and automation — the tools that change how engineers spend a day.</p>
+            <h3>The stack underneath</h3>
+            <p>Compute, inference and the operational costs behind everything running in production.</p>
           </article>
           <article class="capability-card reveal">
             <span>Industry Signals</span>
             <h3>Launches, deprecations, direction</h3>
-            <p>Notable releases and end-of-life notices, read for what they mean for the work ahead.</p>
+            <p>Funding, releases and end-of-life notices, read for what they mean for the work ahead.</p>
           </article>
         </div>
 
@@ -247,14 +151,14 @@
       </div>
     </section>
 
-    <section id="repos" class="section-band">
+    <section id="repos" class="section-band soft-section">
       <div class="section-inner">
         <div class="section-heading reveal">
           <p class="eyebrow">Repos</p>
-          <h2>Smart work, packaged up</h2>
+          <h2>Tooling that makes the work easier</h2>
           <p>
-            Open-source repos aimed at the everyday grind — setups and templates that make engineers faster,
-            especially when working alongside AI tooling. Free to clone, read and adapt.
+            Open-source repos for working smartly in the AI era — the setups, hooks and templates that turn AI
+            assistants into something genuinely useful on real codebases. Free to clone, read and adapt.
           </p>
         </div>
 
@@ -292,6 +196,93 @@
       </div>
     </section>
 
+    <section id="industries" class="section-band">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Industries</p>
+          <h2>Where AI is reshaping the work</h2>
+          <p>
+            AI is not landing evenly. These are the domains growing fastest around it — what is being built in
+            each, what the hard problems are, and what an engineer moving into one should understand.
+          </p>
+        </div>
+
+        <div class="topic-grid">
+          <article class="topic-card reveal">
+            <span>01 — Healthcare &amp; Life Sciences</span>
+            <h3>From diagnosis to drug discovery</h3>
+            <p>The most regulated place AI is being deployed, and the one with the least tolerance for a wrong answer.</p>
+            <ul class="topic-tags">
+              <li>Medical imaging</li>
+              <li>Drug discovery</li>
+              <li>Clinical workflow</li>
+              <li>Patient data privacy</li>
+            </ul>
+          </article>
+
+          <article class="topic-card reveal">
+            <span>02 — Financial Services</span>
+            <h3>Decisions that have to be explainable</h3>
+            <p>Where model output turns into money moved, and every call has to survive an audit.</p>
+            <ul class="topic-tags">
+              <li>Fraud detection</li>
+              <li>Underwriting &amp; risk</li>
+              <li>Document processing</li>
+              <li>Model governance</li>
+            </ul>
+          </article>
+
+          <article class="topic-card reveal">
+            <span>03 — Legal &amp; Compliance</span>
+            <h3>Language work at scale</h3>
+            <p>A field built entirely on documents, now the most natural fit for language models — and the most exposed.</p>
+            <ul class="topic-tags">
+              <li>Contract review</li>
+              <li>Discovery &amp; research</li>
+              <li>Regulatory automation</li>
+              <li>Hallucination risk</li>
+            </ul>
+          </article>
+
+          <article class="topic-card reveal">
+            <span>04 — Robotics &amp; Autonomy</span>
+            <h3>When models meet the physical world</h3>
+            <p>Physical AI, where latency, safety and the gap between simulation and reality decide everything.</p>
+            <ul class="topic-tags">
+              <li>Embodied agents</li>
+              <li>Self-driving</li>
+              <li>Warehouse automation</li>
+              <li>Sim-to-real</li>
+            </ul>
+          </article>
+
+          <article class="topic-card reveal">
+            <span>05 — Energy &amp; Climate</span>
+            <h3>Optimising systems too big to guess at</h3>
+            <p>Grids, materials and climate models — plus the growing question of what AI itself consumes.</p>
+            <ul class="topic-tags">
+              <li>Grid optimisation</li>
+              <li>Materials discovery</li>
+              <li>Climate modelling</li>
+              <li>Datacentre demand</li>
+            </ul>
+          </article>
+
+          <article class="topic-card reveal">
+            <span>06 — Defence &amp; Geospatial</span>
+            <h3>Sensing, mapping and autonomy</h3>
+            <p>Satellite and sensor data at a scale only machines can read, under unusually hard constraints.</p>
+            <ul class="topic-tags">
+              <li>Geospatial intelligence</li>
+              <li>Sensor fusion</li>
+              <li>Autonomous systems</li>
+              <li>Edge deployment</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="about" class="section-band soft-section">
       <div class="section-inner split-layout">
         <div class="section-heading reveal">
@@ -300,12 +291,13 @@
         </div>
         <div class="text-stack reveal">
           <p>
-            KubeKite is a founder-led engineering knowledge brand covering DevOps, Site Reliability Engineering,
-            MLOps, Cloud Computing, AI Infrastructure and Platform Engineering.
+            KubeKite is a founder-led engineering brand for the AI era: tracking how software is changing,
+            building open-source tooling that makes engineers faster, and following the industries AI is
+            reshaping fastest.
           </p>
           <p>
-            The goal is to publish concise, practical material that helps engineers understand how modern systems
-            are built and operated — supported by open-source repos, LinkedIn posts and Medium articles.
+            The work is published in the open — weekly on LinkedIn, in repos on GitHub, and in longer pieces on
+            Medium. It is free, and it stays free.
           </p>
         </div>
       </div>
@@ -316,7 +308,7 @@
         <div>
           <p class="eyebrow">Newsletter</p>
           <h2>KubeKite Weekly</h2>
-          <p>The week in DevOps, SRE, MLOps, Cloud and AI Infrastructure — without the noise.</p>
+          <p>The week across software, AI tooling and the industries AI is reshaping — without the noise.</p>
           <p>Important developments, practical engineering insights and tools worth knowing — curated for engineers.</p>
         </div>
         <form class="newsletter-form" aria-label="KubeKite Weekly subscription placeholder">
@@ -335,15 +327,14 @@
         <div class="contact-intro reveal">
           <p class="eyebrow">Contact</p>
           <h2>Follow, read or collaborate.</h2>
-          <p>KubeKite is focused on education and open-source work. Reach out about the writing, the repos, or a trend worth covering.</p>
+          <p>KubeKite is focused on publishing in the open. Reach out about the writing, the repos, or a trend worth covering.</p>
         </div>
         <div class="contact-topics reveal" aria-label="Contact topics">
-          <span>DevOps</span>
-          <span>SRE</span>
-          <span>MLOps</span>
-          <span>Cloud Computing</span>
-          <span>AI Infrastructure</span>
-          <span>Platform Engineering</span>
+          <span>Weekly Trends</span>
+          <span>AI Tooling</span>
+          <span>Claude Hooks &amp; Agents</span>
+          <span>Open Source</span>
+          <span>Industry Domains</span>
         </div>
         <div class="contact-card reveal">
           <h3>Have a question, correction or topic request?</h3>
@@ -365,12 +356,12 @@
           <span class="brand-mark">K</span>
           <span>KubeKite</span>
         </a>
-        <p>DevOps • SRE • MLOps • Cloud Computing • AI Infrastructure • Platform Engineering</p>
+        <p>Weekly Trends • AI-Era Toolkit • Industry Domains</p>
       </div>
       <div class="footer-links" aria-label="Footer links">
-        <a href="#topics">Topics</a>
         <a href="#trends">Trends</a>
         <a href="#repos">Repos</a>
+        <a href="#industries">Industries</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
         <a href="https://www.linkedin.com/company/kubekite/" rel="noopener">LinkedIn</a>
