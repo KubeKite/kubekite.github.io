@@ -1,18 +1,41 @@
 # KubeKite
 
-Static website for KubeKite, an education-first engineering content brand for Cloud, DevOps, Platform Engineering and AI Infrastructure.
+Static website for KubeKite, an education-first engineering knowledge brand for DevOps, SRE, MLOps, Cloud
+Computing, AI Infrastructure and Platform Engineering.
 
 Core message:
 
 > Understand modern computing infrastructure.
 
+## Content model
+
+The site is deliberately weighted **90% knowledge, 10% services**:
+
+- **90% knowledge** — a topic-led knowledge base covering the six disciplines, plus engineering notes,
+  explainers, weekly news context and open-source examples.
+- **10% services** — a single compact band offering selective infrastructure help for teams that want
+  direct support after reading the work.
+
+## Knowledge areas
+
+Each area has its own card in the `#topics` section with the subtopics it covers:
+
+1. **DevOps** — CI/CD, GitOps and Argo CD, Terraform and IaC, release strategies, supply chain basics
+2. **Site Reliability Engineering** — SLIs/SLOs and error budgets, observability, incident response, postmortems, capacity planning
+3. **MLOps** — training pipelines, feature stores, model registries, serving and rollout, drift monitoring
+4. **Cloud Computing** — compute and storage choices, networking and VPC design, IAM, landing zones, cost awareness
+5. **AI Infrastructure** — GPU scheduling on Kubernetes, inference serving and vLLM, distributed training and Ray, accelerator networking
+6. **Platform Engineering** — internal developer platforms, golden paths, self-service workflows, platform APIs, developer experience
+
 ## Features
 
 - Static GitHub Pages-compatible homepage
-- Simple navigation: Home, Insights, About and Contact
-- Education-focused hero and content model
-- First-class Insights section for Engineering Notes, KubeKite Explains and KubeKite Weekly
-- Compact secondary services section for selective infrastructure help
+- Navigation: Home, Topics, Insights, Latest, About and Contact
+- Topic-led knowledge base as the primary section
+- Insights section describing the publishing formats: Engineering Notes, KubeKite Explains,
+  KubeKite Weekly and open source
+- Latest section with one starter post per knowledge area
+- Compact single-band services strip
 - Founder-led About preview
 - Newsletter placeholder for KubeKite Weekly
 - Existing Google Form contact mechanism

@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KubeKite | Infrastructure Notes for Cloud, DevOps & AI</title>
-  <meta name="description" content="KubeKite publishes practical notes, explainers and weekly updates for Cloud, DevOps, Platform Engineering and AI Infrastructure.">
-  <meta name="keywords" content="KubeKite, cloud infrastructure, DevOps, platform engineering, AI infrastructure, Kubernetes, EKS, GitOps, ArgoCD, Terraform, Ray, GPU infrastructure">
+  <title>KubeKite | Learn DevOps, SRE, MLOps, Cloud & AI Infrastructure</title>
+  <meta name="description" content="KubeKite is a knowledge source for DevOps, SRE, MLOps, Cloud Computing, AI Infrastructure and Platform Engineering — practical notes, explainers and weekly updates for engineers.">
+  <meta name="keywords" content="KubeKite, DevOps, SRE, site reliability engineering, MLOps, cloud computing, AI infrastructure, platform engineering, Kubernetes, EKS, GitOps, ArgoCD, Terraform, Ray, vLLM, GPU infrastructure, observability, SLO">
   <link rel="preload" href="assets/css/styles.css" as="style">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="assets/js/script.js" defer></script>
@@ -18,7 +18,9 @@
     </a>
     <nav class="site-nav" aria-label="Primary navigation">
       <a href="#home">Home</a>
+      <a href="#topics">Topics</a>
       <a href="#insights">Insights</a>
+      <a href="#latest">Latest</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -29,63 +31,160 @@
     <section class="hero section-band">
       <div class="section-inner hero-grid">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Cloud • DevOps • Platform Engineering • AI Infrastructure</p>
+          <p class="eyebrow">DevOps • SRE • MLOps • Cloud • AI Infrastructure • Platform Engineering</p>
           <h1>Learn Modern Computing Infrastructure.</h1>
           <p class="hero-lede">
-            KubeKite publishes concise lessons on Cloud, DevOps, Kubernetes, Platform Engineering and AI Infrastructure.
+            KubeKite is a knowledge source for the six disciplines that run modern systems: DevOps, Site Reliability
+            Engineering, MLOps, Cloud Computing, AI Infrastructure and Platform Engineering.
           </p>
           <p class="hero-note">
-            The focus is education first: engineering notes, news context, LinkedIn posts, Medium articles and open-source learning resources.
+            Everything here is written to teach: engineering notes, plain-language explainers, weekly news with
+            context and open-source examples you can read, run and reuse.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#insights">Read Insights</a>
+            <a class="button primary" href="#topics">Explore Topics</a>
             <a class="button secondary" href="#newsletter">Subscribe</a>
           </div>
         </div>
 
-        <div class="system-panel reveal" aria-label="KubeKite engineering focus">
+        <div class="system-panel reveal" aria-label="How KubeKite covers a topic">
           <div class="panel-header">
             <span class="status-dot"></span>
-            <span>KubeKite Content Model</span>
+            <span>How KubeKite Covers a Topic</span>
           </div>
           <div class="system-flow">
             <div>
-              <span>Signal</span>
-              <strong>What changed in cloud, DevOps or AI infrastructure</strong>
+              <span>Concept</span>
+              <strong>What the technology actually does, in plain language</strong>
             </div>
             <div>
               <span>Context</span>
-              <strong>Why it matters for engineers and platform teams</strong>
+              <strong>Where it fits, what it replaces and when it is the wrong choice</strong>
             </div>
             <div>
-              <span>Action</span>
-              <strong>What to learn, test, build or avoid next</strong>
+              <span>Practice</span>
+              <strong>Configuration, failure modes and operational tradeoffs</strong>
             </div>
             <div class="accent">
-              <span>Traction</span>
-              <strong>LinkedIn, Medium and GitHub resources</strong>
+              <span>Reference</span>
+              <strong>Diagrams, examples and open-source repos to take away</strong>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="focus-strip" aria-label="KubeKite positioning">
+    <section class="focus-strip" aria-label="KubeKite knowledge areas">
       <div class="section-inner focus-grid">
-        <span>Cloud</span>
         <span>DevOps</span>
-        <span>Platform Engineering</span>
+        <span>Site Reliability Engineering</span>
+        <span>MLOps</span>
+        <span>Cloud Computing</span>
         <span>AI Infrastructure</span>
+        <span>Platform Engineering</span>
       </div>
     </section>
 
-    <section id="insights" class="section-band">
+    <section id="topics" class="section-band">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Knowledge Base</p>
+          <h2>Six disciplines, covered in depth.</h2>
+          <p>
+            Each area is treated as a subject to learn rather than a service to sell. Start anywhere — the topics
+            connect, and the notes assume you want to understand the system, not just copy a command.
+          </p>
+        </div>
+
+        <div class="topic-grid">
+          <article class="topic-card reveal">
+            <span>01 — DevOps</span>
+            <h3>Ship changes safely and repeatedly</h3>
+            <p>The delivery path from commit to production, and the automation that keeps it boring.</p>
+            <ul class="topic-tags">
+              <li>CI/CD pipelines</li>
+              <li>GitOps &amp; Argo CD</li>
+              <li>Terraform &amp; IaC</li>
+              <li>Release strategies</li>
+              <li>Supply chain basics</li>
+            </ul>
+          </article>
+
+          <article class="topic-card reveal">
+            <span>02 — Site Reliability Engineering</span>
+            <h3>Make reliability measurable</h3>
+            <p>How mature teams define "good enough", detect failure early and learn from every incident.</p>
+            <ul class="topic-tags">
+              <li>SLIs, SLOs &amp; error budgets</li>
+              <li>Observability</li>
+              <li>Incident response</li>
+              <li>Postmortems</li>
+              <li>Capacity planning</li>
+            </ul>
+          </article>
+
+          <article class="topic-card reveal">
+            <span>03 — MLOps</span>
+            <h3>Move models from notebook to production</h3>
+            <p>The lifecycle around a model: data in, model out, and everything that keeps it honest afterwards.</p>
+            <ul class="topic-tags">
+              <li>Training pipelines</li>
+              <li>Feature stores</li>
+              <li>Model registries</li>
+              <li>Serving &amp; rollout</li>
+              <li>Drift monitoring</li>
+            </ul>
+          </article>
+
+          <article class="topic-card reveal">
+            <span>04 — Cloud Computing</span>
+            <h3>Understand the platform underneath</h3>
+            <p>Core cloud building blocks explained well enough that provider documentation starts making sense.</p>
+            <ul class="topic-tags">
+              <li>Compute &amp; storage choices</li>
+              <li>Networking &amp; VPC design</li>
+              <li>IAM &amp; identity</li>
+              <li>Multi-account landing zones</li>
+              <li>Cost awareness</li>
+            </ul>
+          </article>
+
+          <article class="topic-card reveal">
+            <span>05 — AI Infrastructure</span>
+            <h3>Run AI workloads without guesswork</h3>
+            <p>What actually changes when GPUs, large models and inference traffic enter your infrastructure.</p>
+            <ul class="topic-tags">
+              <li>GPU scheduling on Kubernetes</li>
+              <li>Inference serving &amp; vLLM</li>
+              <li>Distributed training &amp; Ray</li>
+              <li>Accelerator networking</li>
+              <li>Performance vs cost</li>
+            </ul>
+          </article>
+
+          <article class="topic-card reveal">
+            <span>06 — Platform Engineering</span>
+            <h3>Build the paved road for developers</h3>
+            <p>Turning scattered infrastructure into a product other engineers can use without asking for help.</p>
+            <ul class="topic-tags">
+              <li>Internal developer platforms</li>
+              <li>Golden paths</li>
+              <li>Self-service workflows</li>
+              <li>Platform APIs</li>
+              <li>Developer experience</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="insights" class="section-band soft-section">
       <div class="section-inner">
         <div class="section-heading reveal">
           <p class="eyebrow">Insights</p>
-          <h2>What KubeKite Publishes</h2>
+          <h2>How the knowledge is published</h2>
           <p>
-            Simple, useful content for engineers who want less noise and more practical infrastructure judgment.
+            Four formats, all education-first, for engineers who want less noise and more practical infrastructure judgment.
           </p>
         </div>
 
@@ -93,42 +192,23 @@
           <article class="capability-card reveal">
             <span>KubeKite Engineering Notes</span>
             <h3>Real infrastructure lessons</h3>
-            <p>EKS upgrades, Terraform patterns, GitOps, observability, incidents, migrations and operational tradeoffs.</p>
+            <p>EKS upgrades, Terraform patterns, GitOps, SLO design, incidents, migrations and operational tradeoffs.</p>
           </article>
           <article class="capability-card reveal">
             <span>KubeKite Explains</span>
             <h3>Clear technical explainers</h3>
-            <p>Kubernetes, AWS, platform engineering, AI infrastructure, GPUs, Ray, CI/CD and developer tooling.</p>
+            <p>Kubernetes, cloud services, reliability practice, MLOps pipelines, GPUs, Ray, CI/CD and developer tooling.</p>
           </article>
           <article class="capability-card reveal">
             <span>KubeKite Weekly</span>
             <h3>News with engineering context</h3>
-            <p>Cloud, DevOps, Kubernetes, security, platform engineering and AI infrastructure updates without generic noise.</p>
+            <p>Cloud, DevOps, SRE, security, platform engineering and AI infrastructure updates without generic noise.</p>
           </article>
           <article class="capability-card reveal">
             <span>Open Source</span>
             <h3>Repos that teach by example</h3>
-            <p>Small templates, diagrams, examples and starter kits designed to earn trust and GitHub stars over time.</p>
+            <p>Small templates, diagrams, reference architectures and starter kits you can read end to end.</p>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="why" class="section-band soft-section">
-      <div class="section-inner split-layout">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Why KubeKite</p>
-          <h2>Education first, services second.</h2>
-        </div>
-        <div class="text-stack reveal">
-          <p>
-            KubeKite is built around practical infrastructure education. Most of the work is publishing useful
-            notes, explainers, news context, LinkedIn posts, Medium articles and open-source examples.
-          </p>
-          <p>
-            Services stay intentionally small and selective. The main goal is to build trust, help engineers,
-            grow an audience and create useful GitHub resources around modern infrastructure.
-          </p>
         </div>
       </div>
     </section>
@@ -139,14 +219,14 @@
           <p class="eyebrow">Latest</p>
           <h2>Start here</h2>
           <p>
-            Initial content tracks for KubeKite. These are placeholders until the first real posts and repos are published.
+            Initial content tracks across the six topics. These are placeholders until the first real posts and repos are published.
           </p>
         </div>
 
         <div class="article-grid">
           <article class="article-card reveal">
             <div class="article-meta">
-              <span>Engineering Notes</span>
+              <span>DevOps</span>
               <time datetime="2026-08-12">Aug 12, 2026</time>
             </div>
             <h3>EKS upgrade lessons to document early</h3>
@@ -155,7 +235,34 @@
           </article>
           <article class="article-card reveal">
             <div class="article-meta">
-              <span>KubeKite Explains</span>
+              <span>SRE</span>
+              <time datetime="2026-08-12">Aug 12, 2026</time>
+            </div>
+            <h3>Writing an SLO your team will actually defend</h3>
+            <p>Choosing indicators that reflect user pain, and using the error budget as a decision tool rather than a report.</p>
+            <a href="#newsletter" aria-label="Read SLO design placeholder">6 min read</a>
+          </article>
+          <article class="article-card reveal">
+            <div class="article-meta">
+              <span>MLOps</span>
+              <time datetime="2026-08-12">Aug 12, 2026</time>
+            </div>
+            <h3>What breaks between training and serving</h3>
+            <p>Feature skew, versioning gaps and the handoffs that quietly turn a good model into a bad prediction.</p>
+            <a href="#newsletter" aria-label="Read training to serving placeholder">6 min read</a>
+          </article>
+          <article class="article-card reveal">
+            <div class="article-meta">
+              <span>Cloud Computing</span>
+              <time datetime="2026-08-12">Aug 12, 2026</time>
+            </div>
+            <h3>Landing zones without the enterprise jargon</h3>
+            <p>Why multi-account structure exists, what problem it solves and how much of it a small team really needs.</p>
+            <a href="#newsletter" aria-label="Read landing zones placeholder">5 min read</a>
+          </article>
+          <article class="article-card reveal">
+            <div class="article-meta">
+              <span>AI Infrastructure</span>
               <time datetime="2026-08-12">Aug 12, 2026</time>
             </div>
             <h3>Kubernetes plus GPUs, explained simply</h3>
@@ -164,45 +271,37 @@
           </article>
           <article class="article-card reveal">
             <div class="article-meta">
-              <span>KubeKite Weekly</span>
+              <span>Platform Engineering</span>
               <time datetime="2026-08-12">Aug 12, 2026</time>
             </div>
-            <h3>The week in Cloud, DevOps and AI Infrastructure</h3>
-            <p>Signal, context and action for the updates engineers should actually care about.</p>
-            <a href="#newsletter" aria-label="Read KubeKite Weekly placeholder">4 min read</a>
+            <h3>Golden paths that developers choose willingly</h3>
+            <p>What makes a paved road adopted instead of bypassed, and how platform teams measure whether it worked.</p>
+            <a href="#newsletter" aria-label="Read golden paths placeholder">5 min read</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="services" class="section-band soft-section">
-      <div class="section-inner">
+    <section id="why" class="section-band soft-section">
+      <div class="section-inner split-layout">
         <div class="section-heading reveal">
-          <p class="eyebrow">Services</p>
-          <h2>Selective infrastructure help</h2>
-          <p>
-            KubeKite is primarily an education, content and open-source brand. We occasionally help teams with
-            focused infrastructure questions where practical engineering judgment matters.
-          </p>
+          <p class="eyebrow">Why KubeKite</p>
+          <h2>Ninety percent knowledge. Ten percent services.</h2>
         </div>
-
-        <div class="service-grid">
-          <article class="service-card reveal">
-            <h3>Cloud & Kubernetes</h3>
-            <p>Design, review and improve cloud-native infrastructure for reliability, security and cost awareness.</p>
-          </article>
-          <article class="service-card reveal">
-            <h3>Platform Engineering</h3>
-            <p>Help teams create clearer delivery workflows, developer platforms and automation practices.</p>
-          </article>
-          <article class="service-card reveal">
-            <h3>AI Infrastructure</h3>
-            <p>Support teams thinking through infrastructure for AI workloads, inference systems and GPU usage.</p>
-          </article>
-          <article class="service-card reveal">
-            <h3>Modernization</h3>
-            <p>Improve existing infrastructure through cleaner architecture, better observability and simpler operations.</p>
-          </article>
+        <div class="text-stack reveal">
+          <p>
+            KubeKite exists to explain modern infrastructure. Almost all of the work here is publishing:
+            engineering notes, explainers, weekly news context, diagrams and open-source examples across
+            DevOps, SRE, MLOps, Cloud, AI Infrastructure and Platform Engineering.
+          </p>
+          <p>
+            That is deliberate. Free, careful, specific writing is how engineers learn and how trust gets built —
+            so the knowledge base leads and stays open to everyone.
+          </p>
+          <p>
+            Services are the remaining ten percent: a small, selective practice for teams that want direct help
+            after reading the work. They fund the writing; they never shape it.
+          </p>
         </div>
       </div>
     </section>
@@ -215,12 +314,12 @@
         </div>
         <div class="text-stack reveal">
           <p>
-            KubeKite is a founder-led engineering knowledge brand focused on Cloud, DevOps, Platform Engineering
-            and AI Infrastructure.
+            KubeKite is a founder-led engineering knowledge brand covering DevOps, Site Reliability Engineering,
+            MLOps, Cloud Computing, AI Infrastructure and Platform Engineering.
           </p>
           <p>
-            The goal is to publish concise, practical content that helps engineers understand modern infrastructure
-            and supports future open-source projects, GitHub repos, LinkedIn posts and Medium articles.
+            The goal is to publish concise, practical material that helps engineers understand how modern systems
+            are built and operated — supported by open-source repos, LinkedIn posts and Medium articles.
           </p>
         </div>
       </div>
@@ -231,7 +330,7 @@
         <div>
           <p class="eyebrow">Newsletter</p>
           <h2>KubeKite Weekly</h2>
-          <p>The week in Cloud, DevOps and AI Infrastructure — without the noise.</p>
+          <p>The week in DevOps, SRE, MLOps, Cloud and AI Infrastructure — without the noise.</p>
           <p>Important developments, practical engineering insights and tools worth knowing — curated for engineers.</p>
         </div>
         <form class="newsletter-form" aria-label="KubeKite Weekly subscription placeholder">
@@ -245,24 +344,39 @@
       </div>
     </section>
 
+    <section id="services" class="services-strip" aria-label="Selective services">
+      <div class="section-inner services-bar reveal">
+        <div class="services-copy">
+          <p class="eyebrow">Services — the other 10%</p>
+          <h3>Selective infrastructure help, when a team needs it directly.</h3>
+          <p>
+            A small advisory practice alongside the writing: cloud and Kubernetes review, reliability and SLO
+            practice, platform engineering, and infrastructure for AI workloads.
+          </p>
+        </div>
+        <a class="button secondary" href="#contact">Enquire</a>
+      </div>
+    </section>
+
     <section id="contact" class="section-band contact-section">
       <div class="section-inner">
         <div class="contact-intro reveal">
           <p class="eyebrow">Contact</p>
           <h2>Follow, read or collaborate.</h2>
-          <p>KubeKite is focused on education and open-source traction. Reach out for selective infrastructure collaboration.</p>
+          <p>KubeKite is focused on education and open-source traction. Reach out about the content, the repos, or selective infrastructure help.</p>
         </div>
         <div class="contact-topics reveal" aria-label="Contact topics">
-          <span>Cloud Infrastructure</span>
           <span>DevOps</span>
-          <span>Kubernetes</span>
+          <span>SRE</span>
+          <span>MLOps</span>
+          <span>Cloud Computing</span>
+          <span>AI Infrastructure</span>
           <span>Platform Engineering</span>
-          <span>AI/GPU Infrastructure</span>
         </div>
         <div class="contact-card reveal">
-          <h3>Have a focused infrastructure question?</h3>
+          <h3>Have a question, correction or topic request?</h3>
           <p>
-            Use the existing KubeKite form for collaboration, content ideas, repo feedback or selective platform help.
+            Use the existing KubeKite form for content ideas, repo feedback, corrections, collaboration or selective platform help.
           </p>
           <a class="button primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfk7C1w_3CgMhnOai2XXtlCQxVvNY1yoG_O5oz7WT14YGK70g/viewform" rel="noopener">
             Contact KubeKite
@@ -279,9 +393,10 @@
           <span class="brand-mark">K</span>
           <span>KubeKite</span>
         </a>
-        <p>Cloud • DevOps • Platform Engineering • AI Infrastructure</p>
+        <p>DevOps • SRE • MLOps • Cloud Computing • AI Infrastructure • Platform Engineering</p>
       </div>
       <div class="footer-links" aria-label="Footer links">
+        <a href="#topics">Topics</a>
         <a href="#insights">Insights</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
