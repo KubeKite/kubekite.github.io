@@ -9,12 +9,15 @@ Core message:
 
 ## Content model
 
-The site is deliberately weighted **90% knowledge, 10% services**:
+The site is deliberately weighted toward knowledge, with services kept small:
 
-- **90% knowledge** — a topic-led knowledge base covering the six disciplines, plus engineering notes,
-  explainers, weekly news context and open-source examples.
-- **10% services** — a single compact band offering selective infrastructure help for teams that want
+- **Knowledge** — a topic-led knowledge base covering the six disciplines, plus engineering notes,
+  explainers, weekly news context and open-source examples. This is nearly all of the page.
+- **Services** — a single compact band offering selective infrastructure help for teams that want
   direct support after reading the work.
+
+Keep this balance when adding sections: the site is a front door to the writing, the GitHub repos
+and the newsletter, not a services pitch.
 
 ## Knowledge areas
 

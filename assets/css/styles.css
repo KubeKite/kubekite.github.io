@@ -171,29 +171,43 @@ p {
 
 .theme-toggle {
   display: inline-flex;
-  width: 38px;
-  height: 38px;
+  min-height: 42px;
   align-items: center;
-  justify-content: center;
   flex: none;
-  padding: 0;
+  padding: 0 14px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: var(--surface);
+  background: var(--surface-soft);
   color: var(--ink);
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 750;
+  line-height: 1.2;
   cursor: pointer;
-  transition: color 160ms ease, border-color 160ms ease, transform 160ms ease;
+  transition: color 160ms ease, border-color 160ms ease, background 160ms ease, transform 160ms ease;
 }
 
 .theme-toggle:hover {
   border-color: var(--brand);
+  background: var(--surface);
   color: var(--brand);
   transform: translateY(-1px);
 }
 
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.theme-face {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
 .theme-toggle svg {
-  width: 18px;
-  height: 18px;
+  width: 17px;
+  height: 17px;
   fill: none;
   stroke: currentColor;
   stroke-width: 1.8;
@@ -201,24 +215,24 @@ p {
   stroke-linejoin: round;
 }
 
-.theme-toggle .icon-sun {
+.theme-face-light {
   display: none;
 }
 
-:root[data-theme="dark"] .theme-toggle .icon-sun {
-  display: block;
+:root[data-theme="dark"] .theme-face-light {
+  display: inline-flex;
 }
 
-:root[data-theme="dark"] .theme-toggle .icon-moon {
+:root[data-theme="dark"] .theme-face-dark {
   display: none;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .theme-toggle .icon-sun {
-    display: block;
+  :root:not([data-theme="light"]) .theme-face-light {
+    display: inline-flex;
   }
 
-  :root:not([data-theme="light"]) .theme-toggle .icon-moon {
+  :root:not([data-theme="light"]) .theme-face-dark {
     display: none;
   }
 }
