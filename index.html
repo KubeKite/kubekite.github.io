@@ -38,13 +38,19 @@
     </nav>
     <div class="header-actions">
       <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Switch to dark theme" aria-pressed="false" title="Switch theme">
-        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <path d="M20 14.5A8.2 8.2 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"></path>
-        </svg>
-        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <circle cx="12" cy="12" r="4.2"></circle>
-          <path d="M12 2.6v2.2M12 19.2v2.2M4.2 12H2M22 12h-2.2M6.4 6.4 4.9 4.9M19.1 19.1l-1.5-1.5M6.4 17.6l-1.5 1.5M19.1 4.9l-1.5 1.5"></path>
-        </svg>
+        <span class="theme-face theme-face-dark">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M20 14.5A8.2 8.2 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"></path>
+          </svg>
+          Dark
+        </span>
+        <span class="theme-face theme-face-light">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="4.2"></circle>
+            <path d="M12 2.6v2.2M12 19.2v2.2M4.2 12H2M22 12h-2.2M6.4 6.4 4.9 4.9M19.1 19.1l-1.5-1.5M6.4 17.6l-1.5 1.5M19.1 4.9l-1.5 1.5"></path>
+          </svg>
+          Light
+        </span>
       </button>
       <a class="nav-cta" href="#newsletter">Subscribe</a>
     </div>
@@ -309,7 +315,7 @@
       <div class="section-inner split-layout">
         <div class="section-heading reveal">
           <p class="eyebrow">Why KubeKite</p>
-          <h2>Ninety percent knowledge. Ten percent services.</h2>
+          <h2>Knowledge first. Services second.</h2>
         </div>
         <div class="text-stack reveal">
           <p>
@@ -322,8 +328,8 @@
             so the knowledge base leads and stays open to everyone.
           </p>
           <p>
-            Services are the remaining ten percent: a small, selective practice for teams that want direct help
-            after reading the work. They fund the writing; they never shape it.
+            Services stay deliberately small: a selective practice for teams that want direct help after
+            reading the work. They fund the writing; they never shape it.
           </p>
         </div>
       </div>
@@ -370,7 +376,7 @@
     <section id="services" class="services-strip" aria-label="Selective services">
       <div class="section-inner services-bar reveal">
         <div class="services-copy">
-          <p class="eyebrow">Services — the other 10%</p>
+          <p class="eyebrow">Services</p>
           <h3>Selective infrastructure help, when a team needs it directly.</h3>
           <p>
             A small advisory practice alongside the writing: cloud and Kubernetes review, reliability and SLO
