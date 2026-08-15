@@ -8,6 +8,18 @@
   <meta name="keywords" content="KubeKite, DevOps, SRE, site reliability engineering, MLOps, cloud computing, AI infrastructure, platform engineering, Kubernetes, EKS, GitOps, ArgoCD, Terraform, Ray, vLLM, GPU infrastructure, observability, SLO">
   <link rel="preload" href="assets/css/styles.css" as="style">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    // Runs before first paint so the saved theme does not flash the wrong colours.
+    (function () {
+      try {
+        var stored = localStorage.getItem("kubekite-theme");
+        var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute("data-theme", stored || (prefersDark ? "dark" : "light"));
+      } catch (error) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
   <script src="assets/js/script.js" defer></script>
 </head>
 <body>
@@ -24,7 +36,18 @@
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a class="nav-cta" href="#newsletter">Subscribe</a>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Switch to dark theme" aria-pressed="false" title="Switch theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M20 14.5A8.2 8.2 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"></path>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="4.2"></circle>
+          <path d="M12 2.6v2.2M12 19.2v2.2M4.2 12H2M22 12h-2.2M6.4 6.4 4.9 4.9M19.1 19.1l-1.5-1.5M6.4 17.6l-1.5 1.5M19.1 4.9l-1.5 1.5"></path>
+        </svg>
+      </button>
+      <a class="nav-cta" href="#newsletter">Subscribe</a>
+    </div>
   </header>
 
   <main id="home">
