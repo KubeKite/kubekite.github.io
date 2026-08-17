@@ -11,7 +11,6 @@
   --brand: #5cc4d4;
   --brand-dark: #2a9db0;
   --on-brand: #04191f;
-  --accent: #f0a44a;
   --success: #2dd4bf;
 
   --cta-bg: #e7eef4;
@@ -23,7 +22,6 @@
   --grid-line: rgba(38, 53, 70, 0.55);
   --grid-bg: #0f1922;
   --flow-card-bg: rgba(19, 30, 42, 0.95);
-  --accent-soft: #241a0d;
 
   /* The focus strip and footer stay dark in both themes. */
   --band-bg: #060d14;
@@ -52,7 +50,6 @@
   --brand: #126c7a;
   --brand-dark: #0b4350;
   --on-brand: #ffffff;
-  --accent: #d97706;
   --success: #0d9488;
 
   --cta-bg: #14212f;
@@ -64,7 +61,6 @@
   --grid-line: rgba(219, 228, 234, 0.58);
   --grid-bg: #fbfdff;
   --flow-card-bg: rgba(255, 255, 255, 0.95);
-  --accent-soft: #fffaf2;
 
   --band-bg: #14212f;
   --band-text: #d9e2e8;
@@ -400,11 +396,6 @@ h3 {
   border-left: 4px solid var(--brand);
   border-radius: var(--radius);
   background: var(--flow-card-bg);
-}
-
-.system-flow div.accent {
-  border-left-color: var(--accent);
-  background: var(--accent-soft);
 }
 
 .system-flow span,
